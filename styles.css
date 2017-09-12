@@ -29,16 +29,27 @@ body > .container {
   padding-left: 15px;
 }
 
-code {
-  font-size: 80%;
-}
-
 /*Navbar*/
+
+
 .navbar.navbar-default.navbar-fixed-top {
   background: #ffffff;
   box-shadow: none;
   border-bottom-style: solid;
   border-bottom-color: #000000;
+  border-bottom-width: 3px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.navbar-brand-image {
+  padding: 5px;
+  padding-left: 10px;
+}
+
+.navbar-brand-image > img {
+  height: 40px;
+  width: 40px;
 }
 
 .search-bar, .search-btn {
@@ -74,4 +85,31 @@ input[type="color"]:focus,
   border-color: transparent;
   background: #000000;
   color: #ffffff;
+}
+
+span.glyphicon.glyphicon-chevron-down {
+  margin-right: 10px;
+  margin-left: 10px;
+  font-size: 10px;
+}
+
+.navbar-brand-text {
+  font-family: NeuzeitGro-Bol;
+}
+
+/*Navbar collapse styling*/
+@media (min-width: 0px) and (max-width: 768px) {
+  .navbar-nav {
+    margin: 0 -15px 0 -15px;
+  }
+
+  .navbar-header {
+    float: left;
+  }
+
+  .navbar-default .navbar-nav>li>a {
+    float: right;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
 }
