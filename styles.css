@@ -170,8 +170,9 @@ span.glyphicon.glyphicon-chevron-down {
 }
 
 /*=======================*/
-/*Navbar collapse styling*/
-@media (min-width: 0px) and (max-width: 768px) {
+/*Media Queries*/
+@media (max-width: 768px) {
+  /*Navbar collapse*/
   .navbar-nav {
     margin: 0 -15px 0 -15px;
   }
@@ -197,5 +198,12 @@ span.glyphicon.glyphicon-chevron-down {
 
   .dropdown-menu .divider {
     background-color: #000000;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 992px) {
+  /*Footer collapse*/
+  .footer ul {
+    display: none;
   }
 }
