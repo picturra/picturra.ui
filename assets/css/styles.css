@@ -1,0 +1,5 @@
+/*Base files*/
+@import 'base/base.css';
+
+/*Components*/
+@import 'components/navbar-footer.css';
