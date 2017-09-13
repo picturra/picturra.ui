@@ -1,5 +1,6 @@
 /*Base files*/
 @import 'base/base.css';
+@import 'base/MyFontsWebfontsKit.css';
 
 /*Components*/
 @import 'components/navbar-footer.css';
