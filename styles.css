@@ -1,19 +1,62 @@
-/*Sticky Footer Styles*/
+/*================*/
+/*Baseline styling*/
+body {
+  font-family: NeuzeitGro-Reg !important;
+  color: #000000 !important;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: NeuzeitGro-Bol !important;
+}
+
+a, a:hover {
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+/*All Input Boxes Styling*/
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+  box-shadow: none;
+  border: 0;
+  background: #000000;
+  color: #ffffff;
+}
+
+/*==================================*/
+/*Sticky Footer Formatting Styles*/
 html {
   position: relative;
   min-height: 100%;
 }
 body {
   /* Margin bottom by footer height */
-  margin-bottom: 60px;
-  font-family: NeuzeitGro-Reg;
+  margin-bottom: 200px;
 }
+
 .footer {
   position: absolute;
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
-  height: 60px;
+  height: 200px;
   background-color: #f5f5f5;
 }
 
@@ -29,9 +72,8 @@ body > .container {
   padding-left: 15px;
 }
 
-/*Navbar*/
-
-
+/*====================*/
+/*Navbar Styling*/
 .navbar.navbar-default.navbar-fixed-top {
   background: #ffffff;
   box-shadow: none;
@@ -52,7 +94,18 @@ body > .container {
   width: 40px;
 }
 
-.search-bar, .search-btn {
+.navbar-brand-text {
+  color: #000000 !important;
+  font-family: NeuzeitGro-Bol;
+  font-size: 25px;
+}
+
+  /*Nav Search*/
+.search-box {
+  margin-right: 90px;
+}
+
+.search-input {
   border-style: solid;
   border-width: 1px;
   border-color: transparent;
@@ -60,30 +113,12 @@ body > .container {
   background: none;
 }
 
-.search-bar {
+.search-input {
   text-align: right;
   border-radius: 0;
 }
 
-.search-bar .textarea:focus,
-input[type="text"]:focus,
-input[type="password"]:focus,
-input[type="datetime"]:focus,
-input[type="datetime-local"]:focus,
-input[type="date"]:focus,
-input[type="month"]:focus,
-input[type="time"]:focus,
-input[type="week"]:focus,
-input[type="number"]:focus,
-input[type="email"]:focus,
-input[type="url"]:focus,
-input[type="search"]:focus,
-input[type="tel"]:focus,
-input[type="color"]:focus,
-.uneditable-input:focus {
-  box-shadow: none;
-  border-color: transparent;
-  background: #000000;
+.search-input:focus + span {
   color: #ffffff;
 }
 
@@ -93,14 +128,57 @@ span.glyphicon.glyphicon-chevron-down {
   font-size: 10px;
 }
 
-.navbar-brand-text {
-  font-family: NeuzeitGro-Bol;
+/*Nav Dropdown*/
+.dropdown-menu {
+  background: #000000;
+  border-radius: 0;
 }
 
+.dropdown-menu>li>a {
+  color: #ffffff;
+}
+
+.dropdown-menu .divider {
+  background-color: #ffffff;
+}
+
+.navbar-default .navbar-nav>li>a {
+  font-family: NeuzeitGro-Bol;
+  color: #000000;
+}
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+  background: #000000;
+  color: #ffffff;
+}
+
+.dropdown-menu>li>a:hover {
+  background: #000000;
+  color: #ffffff;
+}
+
+/*==============*/
+/*Footer Styling*/
+.footer {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.footer-row {
+  margin-top: 20px;
+  background-color: #000000;
+}
+
+/*=======================*/
 /*Navbar collapse styling*/
 @media (min-width: 0px) and (max-width: 768px) {
   .navbar-nav {
     margin: 0 -15px 0 -15px;
+  }
+
+  .navbar.navbar-default.navbar-fixed-top {
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .navbar-header {
@@ -111,5 +189,13 @@ span.glyphicon.glyphicon-chevron-down {
     float: right;
     padding-top: 15px;
     padding-bottom: 15px;
+  }
+
+  .navbar-default .navbar-nav .open .dropdown-menu>li>a, .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
+    color: #000000;
+  }
+
+  .dropdown-menu .divider {
+    background-color: #000000;
   }
 }
