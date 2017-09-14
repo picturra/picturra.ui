@@ -39,3 +39,23 @@ input[type="color"]:focus,
   background: #000000;
   color: #ffffff;
 }
+
+/*Buttons*/
+.btn {
+  border-radius: 0;
+  border: 0;
+  background-color: #555555;
+}
+
+.btn > * {
+  color: #ffffff;
+}
+
+.btn:hover {
+  background-color: #000000;
+}
+
+/*Modals*/
+.modal-content {
+  border-radius: 0;
+}

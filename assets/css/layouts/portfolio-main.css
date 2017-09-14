@@ -1,0 +1,27 @@
+/*Profile Bio Styling*/
+.profile-pic {
+  max-width: 165px;
+  max-height: 165px;
+}
+
+
+.message-btn, .follow-btn {
+  padding: 0;
+  height: 40px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.message-btn > span, .follow-btn {
+  padding: 12px;
+}
+
+.follow-btn {
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-right: 8px;
+}
+
+.follow-btn > * {
+  margin: 0;
+}
