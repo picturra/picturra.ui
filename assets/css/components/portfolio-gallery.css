@@ -1,0 +1,19 @@
+/*Gallery Styles*/
+.gallery-item {
+  width: 30%;
+  height: auto;
+  margin-bottom: 12px;
+}
+
+/*Media Queries for gallery images*/
+@media (max-width: 768px) {
+  .gallery-item {
+    width: 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  .gallery-item {
+    width: 100%;
+  }
+}
