@@ -2,13 +2,40 @@
 .gallery-item {
   width: 30%;
   height: auto;
-  margin-bottom: 12px;
+  margin-bottom: 36px;
+}
+
+.gallery-item-info {
+  margin-top: 12px;
+}
+
+.gallery-item-info p {
+  margin-bottom: 0;
+}
+
+.item-title {
+  font-weight: 500;
+  font-size: 14px;
+  font-family: NeuzeitGro-Bol;
+}
+
+.item-price {
+  text-align: right;
+  font-weight: 500;
+  font-size: 18px;
+  font-family: NeuzeitGro-Bol;
 }
 
 /*Media Queries for gallery images*/
+@media (max-width: 992px) {
+  .item-price {
+    text-align: left;
+  }
+}
+
 @media (max-width: 768px) {
   .gallery-item {
-    width: 50%;
+    width: 45%;
   }
 }
 

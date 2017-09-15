@@ -4,7 +4,7 @@ $(document).ready(function () {
     itemSelector: '.gallery-item',
     // Masonry Options
     masonry: {
-      gutter: 12,
+      gutter: 36,
       columnWidth: '.gallery-item',
       horizontalOrder: true
     }

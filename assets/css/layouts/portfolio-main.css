@@ -1,9 +1,12 @@
 /*Profile Bio Styling*/
+.profile-bio {
+  margin-bottom: 60px;
+}
+
 .profile-pic {
   max-width: 165px;
   max-height: 165px;
 }
-
 
 .message-btn, .follow-btn {
   padding: 0;
@@ -24,4 +27,29 @@
 
 .follow-btn > * {
   margin: 0;
+  font-weight: 500;
+  font-size: 14px;
+  font-family: NeuzeitGro-Bol;
+}
+
+.profile-cv, .profile-category, .profile-location {
+  font-weight: 500;
+  font-size: 14px;
+  font-family: NeuzeitGro-Bol;
+}
+
+.profile-location {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.profile-stats > li {
+  font-weight: bold;
+}
+
+@media (max-width: 576px) {
+  .profile-bio {
+    margin-bottom: 20px;
+  }
 }
