@@ -26,6 +26,34 @@
   font-family: NeuzeitGro-Bol;
 }
 
+.gallery-filter-row {
+  margin-bottom: 24px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #cccccc;
+}
+
+.btn-show-all {
+  font-family: NeuzeitGro-Bol;
+}
+
+.filters-button-group button {
+  background-color: transparent;
+  color: #000000 !important;
+  border-bottom-style: solid;
+  border-bottom-width: 3px;
+  border-bottom-color: transparent;
+}
+
+.filters-button-group button:hover,
+.filters-button-group button:focus,
+.filters-button-group button:active:focus {
+  background-color: transparent;
+  border-bottom-style: solid;
+  border-bottom-color: #000000;
+  border-bottom-width: 3px;
+}
+
 /*Media Queries for gallery images*/
 @media (max-width: 992px) {
   .item-price {
