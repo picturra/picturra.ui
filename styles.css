@@ -1,0 +1,8 @@
+/*Base files*/
+@import 'base/base.css';
+@import 'base/MyFontsWebfontsKit.css';
+
+/*Components*/
+@import 'components/navbar-footer.css';
+@import 'layouts/portfolio-main.css';
+@import 'components/portfolio-gallery.css'
