@@ -1,6 +1,6 @@
 $(document).ready(function () {
   // Initialize Isotope
-  $('.gallery-wrapper').isotope({
+  var $gallery = $('.gallery-wrapper').isotope({
     itemSelector: '.gallery-item',
     // Masonry Options
     masonry: {
@@ -8,5 +8,12 @@ $(document).ready(function () {
       columnWidth: '.gallery-item',
       horizontalOrder: true
     }
-  })
+  });
+
+  $('.filters-button-group').on('click', 'button', function() {
+    var filterVal = $(this).attr('data-filter');
+    console.log(filterVal);
+
+    $gallery.isotope({ filter: filterVal });
+  });
 });

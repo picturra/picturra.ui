@@ -47,12 +47,17 @@ input[type="color"]:focus,
   background-color: #555555;
 }
 
-.btn > * {
-  color: #ffffff;
+.btn {
+  color: #ffffff !important;
 }
 
 .btn:hover {
   background-color: #000000;
+}
+
+.btn.active, .btn:focus, .btn:active {
+  box-shadow: none !important;
+  outline: none !important;
 }
 
 /*Modals*/
