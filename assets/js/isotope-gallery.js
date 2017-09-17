@@ -18,7 +18,7 @@ $(document).ready(function () {
   });
 
   // layout Isotope after each image loads
-    $grid.imagesLoaded().progress( function() {
-      $grid.isotope('layout');
-    });
+  $gallery.imagesLoaded().progress( function() {
+    $gallery.isotope('layout');
+  });
 });
