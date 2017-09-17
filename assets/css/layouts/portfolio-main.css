@@ -1,0 +1,56 @@
+/*Profile Bio Styling*/
+.profile-bio-section {
+  margin-bottom: 60px;
+  margin-top: 77px;
+}
+
+.profile-pic {
+  max-width: 165px;
+  max-height: 165px;
+}
+
+.message-btn, .follow-btn {
+  padding: 0;
+  height: 40px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.message-btn > span, .follow-btn {
+  padding: 12px;
+}
+
+.follow-btn {
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-right: 8px;
+}
+
+.follow-btn > * {
+  margin: 0;
+  font-weight: 500;
+  font-size: 14px;
+  font-family: NeuzeitGro-Bol;
+}
+
+.profile-cv, .profile-category, .profile-location {
+  font-weight: 500;
+  font-size: 14px;
+  font-family: NeuzeitGro-Bol;
+}
+
+.profile-location {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.profile-stats > li {
+  font-weight: bold;
+}
+
+@media (max-width: 576px) {
+  .profile-bio {
+    margin-bottom: 20px;
+  }
+}
