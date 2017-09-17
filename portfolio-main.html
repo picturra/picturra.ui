@@ -13,9 +13,8 @@
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <!-- Slick for carousel -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.min.css">
+    <!-- Flickity for carousel -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./assets/css/styles.css">
   </head>
@@ -57,12 +56,12 @@ purus pulvinar erat. Quisque tortor ante viverra.</p>
       <!-- Filter Buttons -->
       <div class="gallery-filter-row">
           <div class="filters-button-group" role="group" aria-label="Portfolio filters">
-                    <button type="button" class="btn btn-default btn-show-all" data-filter="*">View All</button>
+            <button type="button" class="btn btn-default btn-show-all" data-filter="*">View All</button>
             <button type="button" class="btn btn-default" data-filter=".painting">Painting</button>
             <button type="button" class="btn btn-default" data-filter=".photography">Photography</button>
             <button type="button" class="btn btn-default" data-filter=".landscape">Landscape</button>
             <button type="button" class="btn btn-default" data-filter=".portrait">Portrait</button>
-            
+
           </div>
       </div>
 
@@ -335,8 +334,9 @@ purus pulvinar erat. Quisque tortor ante viverra.</p>
 <script src="./assets/js/isotope-gallery.js"></script>
 <!-- imagesLoaded plugin -->
 <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
-<!-- Slick for button filters -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.js"></script>
-<script src="assets/js/slick-carousel.js"></script>
+
+<!-- Flickity for carousel -->
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script src="assets/js/flickity-filters.js"></script>
   </body>
 </html>
