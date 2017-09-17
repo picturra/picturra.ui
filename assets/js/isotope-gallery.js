@@ -10,10 +10,15 @@ $(document).ready(function () {
     }
   });
 
+  // Isotope filters
   $('.filters-button-group').on('click', 'button', function() {
     var filterVal = $(this).attr('data-filter');
-    console.log(filterVal);
 
     $gallery.isotope({ filter: filterVal });
   });
+
+  // layout Isotope after each image loads
+    $grid.imagesLoaded().progress( function() {
+      $grid.isotope('layout');
+    });
 });
