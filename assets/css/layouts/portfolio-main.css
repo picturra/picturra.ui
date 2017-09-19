@@ -11,16 +11,21 @@
 
 .message-btn, .follow-btn {
   padding: 0;
-  height: 40px;
-  margin-top: 8px;
-  margin-bottom: 8px;
+  height: 30px;
+  margin-top: 7px;
+  margin-bottom: 7px;
 }
 
-.message-btn > span, .follow-btn {
-  padding: 12px;
+.message-btn > span {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 12px;
+  padding-right: 12px;
 }
 
 .follow-btn {
+  padding-top: 5px;
+  padding-bottom: 5px;
   padding-left: 40px;
   padding-right: 40px;
   margin-right: 8px;
@@ -33,20 +38,21 @@
   font-family: NeuzeitGro-Bol;
 }
 
-.profile-cv, .profile-category, .profile-location {
+.profile-cv, .profile-category {
   font-weight: 500;
   font-size: 14px;
   font-family: NeuzeitGro-Bol;
 }
 
 .profile-location {
+  font-size: 10px;
   display: block;
   margin-top: 5px;
   margin-bottom: 5px;
 }
 
 .profile-stats > li {
-  font-weight: bold;
+  font-size: 10px;
 }
 
 @media (max-width: 576px) {
