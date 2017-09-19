@@ -1,5 +1,6 @@
 /*Gallery Styles*/
 
+/*Filter buttons*/
 .gallery-filter-row {
   margin-bottom: 24px;
   border-bottom-style: solid;
@@ -13,6 +14,11 @@
   font-family: NeuzeitGro-Bol;
 }
 
+.filters-button-group .selected {
+  background-color: transparent;
+  border-bottom-color: #000000;
+}
+
 .gallery-filter-row button {
   background-color: transparent;
   color: #000000 !important;
@@ -21,13 +27,13 @@
   border-bottom-color: transparent;
 }
 
-.gallery-filter-row button:hover,
-.gallery-filter-row button:focus,
-.gallery-filter-row button:active:focus {
-  background-color: transparent;
-  border-bottom-style: solid;
-  border-bottom-color: #000000;
-  border-bottom-width: 3px;
+.filters-button-group .btn:hover,
+.filters-button-group .btn:focus,
+.filters-button-group .btn:active {
+  background-color: transparent !important;
+  border-bottom-style: solid !important;
+  border-bottom-color: #000000 !important;
+  border-bottom-width: 3px !important;
 }
 
 .flickity-prev-next-button.next {
@@ -44,6 +50,7 @@
   border-bottom-style: none !important;
 }
 
+/*Image gallery*/
 .gallery-item {
   width: 30%;
   height: auto;

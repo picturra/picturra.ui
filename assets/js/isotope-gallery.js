@@ -11,13 +11,13 @@ $(document).ready(function () {
   });
 
   // Isotope filters
-  $('.filters-button-group').on('click', 'button', function() {
+  $('.gallery-filter-row').on('click', 'button', function() {
     var filterVal = $(this).attr('data-filter');
 
     $gallery.isotope({ filter: filterVal });
   });
 
-  // layout Isotope after each image loads
+  // layout Isotope only after images load to avoid layout errors
   $gallery.imagesLoaded().progress( function() {
     $gallery.isotope('layout');
   });

@@ -38,20 +38,21 @@
   font-family: NeuzeitGro-Bol;
 }
 
-.profile-cv, .profile-category, .profile-location {
+.profile-cv, .profile-category {
   font-weight: 500;
   font-size: 14px;
   font-family: NeuzeitGro-Bol;
 }
 
 .profile-location {
+  font-size: 10px;
   display: block;
   margin-top: 5px;
   margin-bottom: 5px;
 }
 
 .profile-stats > li {
-  font-weight: bold;
+  font-size: 10px;
 }
 
 @media (max-width: 576px) {
