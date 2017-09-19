@@ -38,12 +38,6 @@
   font-family: NeuzeitGro-Bol;
 }
 
-.profile-cv, .profile-category {
-  font-weight: 500;
-  font-size: 14px;
-  font-family: NeuzeitGro-Bol;
-}
-
 .profile-location {
   font-size: 10px;
   display: block;
@@ -53,6 +47,12 @@
 
 .profile-stats > li {
   font-size: 10px;
+}
+
+.profile-cv, .profile-category {
+  font-weight: 500;
+  font-size: 14px;
+  font-family: NeuzeitGro-Bol;
 }
 
 @media (max-width: 576px) {
