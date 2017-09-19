@@ -10,6 +10,15 @@
   margin-right: 40px;
 }
 
+.filter-wrapper {
+  padding-top: 10px;
+  padding-bottom: 1px;
+  position: sticky;
+  background-color: #ffffff;
+  z-index: 10000;
+  top: 53px;
+}
+
 .btn-show-all {
   font-family: NeuzeitGro-Bol;
 }
