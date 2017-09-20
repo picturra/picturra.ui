@@ -12,7 +12,7 @@
   padding-bottom: 1px;
   background-color: #ffffff;
   z-index: 10000;
-  overflow-y: auto;
+  overflow-y: hidden;
 }
 
 .btn-show-all {
@@ -103,6 +103,22 @@
   font-weight: 500;
   font-size: 18px;
   font-family: NeuzeitGro-Bol;
+}
+
+/*To-top button*/
+.top-btn {
+  position: fixed;
+  transform: rotate(90deg);
+  right: -50px;
+  bottom: 20vh;
+  z-index: 500;
+  transition: all 0.2s ease-in-out;
+}
+
+.fixed-top-btn {
+  transform: rotate(0);
+  display: initial;
+  right: 5px;
 }
 
 /*Media Queries for gallery images*/
