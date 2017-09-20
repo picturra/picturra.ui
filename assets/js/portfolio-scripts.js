@@ -16,3 +16,7 @@ $(window).scroll(function() {
     $('.gallery-wrapper').css('margin-top', 0);
   }
 });
+
+$(window).resize(function() {
+  $('.fixed-filters').width($('.container').width());
+});
