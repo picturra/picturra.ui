@@ -3,11 +3,16 @@
 /*Filter buttons*/
 .gallery-filter-row {
   margin-bottom: 24px;
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
-  border-bottom-color: #cccccc;
-  margin-left: 40px;
-  margin-right: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.filter-wrapper {
+  padding-top: 10px;
+  padding-bottom: 1px;
+  background-color: #ffffff;
+  z-index: 10000;
+  overflow-y: auto;
 }
 
 .btn-show-all {
@@ -50,11 +55,33 @@
   border-bottom-style: none !important;
 }
 
+.flickity-viewport {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #cccccc;
+}
+
+.fixed-filters {
+  position: fixed;
+  top: 53px;
+}
+
 /*Image gallery*/
+.gallery-wrapper {
+  margin-bottom: 60px;
+  transition: height 1s ease-in-out;
+  transition-delay: 0.5s;
+}
+
 .gallery-item {
   width: 30%;
   height: auto;
   margin-bottom: 36px;
+}
+
+.gallery-item .img-responsive {
+  max-height: 400px;
+  margin: 0 auto;
 }
 
 .gallery-item-info {
