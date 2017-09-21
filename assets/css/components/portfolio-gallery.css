@@ -106,18 +106,55 @@
 }
 
 /*To-top button*/
+.small-follow-btn,
 .top-btn {
   position: fixed;
   transform: rotate(90deg);
-  right: -50px;
-  bottom: 20vh;
+  right: -60px;
+  bottom: 20px;
   z-index: 500;
   transition: all 0.2s ease-in-out;
+  font-size: 11px;
+  height: 40px;
+  width: 40px;
+  padding: 0;
 }
 
+.small-follow-btn {
+  bottom: 70px;
+}
+
+.small-follow-btn-icon {
+  font-size: 14px;
+  font-weight: 900;
+  margin-bottom: -5px;
+}
+
+.small-follow-btn,
+.small-follow-btn:hover,
+.small-follow-btn:active,
+.small-follow-btn:focus,
+.top-btn,
+.top-btn:hover,
+.top-btn:active,
+.top-btn:focus {
+  background: #ffffff;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #000000;
+  color: #000000 !important;
+}
+
+.small-follow-btn-icon,
+.small-follow-btn-text,
+.top-btn-text {
+  display: block;
+  font-family: NeuzeitGro-Bol;
+}
+
+.fixed-small-follow-btn,
 .fixed-top-btn {
   transform: rotate(0);
-  display: initial;
   right: 5px;
 }
 

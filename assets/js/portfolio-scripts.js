@@ -7,7 +7,7 @@ $('.filters-button-group > .btn').click(function(){
 
 $(window).scroll(function() {
   if ($(window).scrollTop() >= ($('.profile-bio-section').outerHeight(true) - $('.filter-wrapper').height() + 5 )) {
-    $('.follow-btn').addClass('fixed-follow-btn');
+    $('.small-follow-btn').addClass('fixed-small-follow-btn');
     $('.top-btn').addClass('fixed-top-btn');
 
     $('.filter-wrapper').addClass('fixed-filters')
@@ -19,6 +19,7 @@ $(window).scroll(function() {
 
     $('.gallery-wrapper').css('margin-top', 0);
 
+    $('.small-follow-btn').removeClass('fixed-small-follow-btn');
     $('.top-btn').removeClass('fixed-top-btn');
   }
 });
