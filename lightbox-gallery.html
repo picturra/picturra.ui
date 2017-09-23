@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="theme-color" content="#000000">
+    <link rel="icon" href="">
+
+    <title>Picturra</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Flickity for carousel -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <!-- Fancybox for lightbox -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+  </head>
+
+  <body>
+    <!-- Fixed Navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="navbar-header">
+        <a href="#" class="navbar-brand navbar-brand-image"><img src="./assets/images/Profile-pic.JPG" alt="Profile picture"></a>
+        <a href="#" class="navbar-brand navbar-brand-text">Jenn Baker</a>
+      </div>
+      <div id="navbar" class="navbar-right">
+          <form class="navbar-form navbar-left collapse navbar-collapse">
+            <div class="form-group has-feedback search-box">
+              <input type="text" class="form-control search-input" placeholder="Search">
+              <span class="glyphicon glyphicon-search form-control-feedback"></span>
+            </div>
+          </form>
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu<span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Menu 1</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Menu 2</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Menu 3</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Begin page content -->
+    <div class="container">
+      <!-- Filters row -->
+      <div class="row gallery-filter-row">
+        <a href="main.html">
+          <div class="col-md-2 all-link">
+            <span class="glyphicon glyphicon-chevron-left"></span><span></span> All Artwork</span>
+          </div>
+        </a>
+        <div class="col-md-10">
+          <div class="filters-button-group" role="group" aria-label="Portfolio filters">
+            <button type="button" class="btn btn-default" data-filter=".painting">Painting</button>
+            <button type="button" class="btn btn-default" data-filter=".photography">Photography</button>
+            <button type="button" class="btn btn-default" data-filter=".landscape">Landscape</button>
+            <button type="button" class="btn btn-default" data-filter=".portrait">Portrait</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gallery and info wrapper -->
+      <!-- Thumbnails -->
+      <div class="row expanded-gallery-wrapper">
+        <div class="col-md-1">
+          <img src="assets/images/painting1.JPG" class="lightbox-thumb" alt="">
+          <img src="assets/images/painting2.JPG" class="lightbox-thumb" alt="">
+          <img src="assets/images/painting3.JPG" class="lightbox-thumb" alt="">
+        </div>
+
+        <!-- Selected view image -->
+        <div class="col-md-7 lightbox-main">
+          <a href="assets/images/painting1.JPG" data-fancybox="item-views" data-caption="Acrylic Painting on Linen, Created in 2009">
+            <img src="assets/images/painting1.JPG" class="img-responsive lightbox-shown" alt="">
+          </a>
+          <a href="assets/images/painting2.JPG" data-fancybox="item-views" data-caption="Oval oil painting on Velázquez canvas">
+            <img src="assets/images/painting2.JPG" class="img-responsive" alt="">
+          </a>
+          <a href="assets/images/painting3.JPG" data-fancybox="item-views" data-caption="Made with the best oil paints available">
+            <img src="assets/images/painting3.JPG" class="img-responsive" alt="">
+          </a>
+        </div>
+
+        <!-- Info sidebar -->
+        <div class="col-md-4 item-info-sidebar">
+          <h3>The Orange Roof</h3>
+          <span class="item-medium">Acrylic Painting on Linen, Created in 2009</span>
+          <span class="item-dimensions">18 x 12 x 1.5 inches</span>
+          <span class="item-availability">Editioned, 2 x 5 Available</span>
+          <span class="item-format">Framed</span>
+          <p class="item-description-text">Oval oil painting on Velázquez canvas. Made with
+            the best oil paints available and with pure Lapis
+            Lazuli. Two layers of varnish. Signed and dated. Part
+            of Marine Life series.
+          </p>
+          <div class="price-and-cart">
+            <span class="item-price">$1,200</span>
+            <span class="item-shipping-price">+$12.43 Shipping to 60625</span>
+            <button class="btn btn-cart">Add to Cart</button>
+            <a href="#" class="terms-link">View Transaction Terms + Reviews</a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+<!-- Sticky Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="row footer-row">
+      <div class="col-md-2">
+        <a href="#"><h5>Collectors</h5></a>
+          <ul>
+            <a href="#"><li>About our Collectors</li></a>
+            <a href="#"><li>Transaction FAQ</li></a>
+            <a href="#"><li>Collector Terms</li></a>
+          </ul>
+      </div>
+      <div class="col-md-2">
+        <a href="#"><h5>Artists</h5></a>
+          <ul>
+            <a href="#"><li>About out Artists</li></a>
+            <a href="#"><li>Portfolio Help Guide</li></a>
+            <a href="#"><li>Artist Terms</li></a>
+          </ul>
+      </div>
+      <div class="col-md-2">
+        <a href="#"><h5>About Us</h5></a>
+          <ul>
+            <a href="#"><li>Purpose</li></a>
+            <a href="#"><li>Contact Picturra</li></a>
+            <a href="#"><li>Site User Terms</li></a>
+          </ul>
+      </div>
+      <div class="col-md-4 col-md-offset-2">
+        <h2>Picturra</h2>
+        <h4>Tagline</h4>
+      </div>
+  </div>
+</footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- Isotope JS for gallery layout and sorting -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <script src="./assets/js/isotope-gallery.js"></script>
+    <!-- imagesLoaded plugin -->
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <!-- Flickity for carousel -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="assets/js/flickity-filters.js"></script>
+    <!-- Portfolio scripts -->
+    <script src="assets/js/portfolio-scripts.js"></script>
+    <!-- Fancybox for lightbox -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.js"></script>
+    <!-- Lightbox scripts -->
+    <script src="assets/js/lightbox-scripts.js"></script>
+  </body>
+</html>

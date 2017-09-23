@@ -4,6 +4,7 @@
 
 /*Layouts*/
 @import 'layouts/portfolio-main.css';
+@import 'layouts/lightbox-gallery.css';
 
 /*Components*/
 @import 'components/portfolio-gallery.css';
