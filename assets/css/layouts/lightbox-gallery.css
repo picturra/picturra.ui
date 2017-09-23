@@ -1,0 +1,90 @@
+.expanded-gallery-wrapper {
+  margin-bottom: 100px;
+}
+
+.gallery-filter-row {
+  margin-top: 60px;
+}
+
+.all-link {
+  top: 6px;
+  left: -25px;
+  margin-bottom: 10px;
+  font-family: NeuzeitGro-Bol;
+}
+
+.item-info-sidebar span {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.item-info-sidebar h3 {
+  margin-top: 0;
+}
+
+.item-medium,
+.item-description-text {
+  padding-bottom: 15px;
+  border-bottom-style: solid;
+  border-bottom-width: 3px;
+  border-bottom-color: #000000;
+}
+
+.price-and-cart {
+text-align: center;
+}
+
+.item-info-sidebar .item-price,
+.item-info-sidebar .item-shipping-price {
+  text-align: left;
+}
+
+.btn-cart {
+  font-family: NeuzeitGro-Bol;
+  font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 55px;
+  padding-right: 55px;
+  margin-top: 30px;
+  background-color: #000000;
+}
+
+.terms-link {
+  display: block;
+  margin-top: 15px;
+  font-family: NeuzeitGro-Bol;
+}
+
+/*lightbox and item views*/
+.lightbox-thumb {
+  object-fit: cover;
+  width: 70px;
+  height: 70px;
+  clip: rect(0px, 60px, 60px, 0px);
+  margin-bottom: 5px;
+}
+
+.lightbox-thumb:hover {
+  outline-style: solid;
+  outline-width: 3px;
+  outline-color: #000000;
+}
+
+.lightbox-main img {
+  display: none;
+}
+
+.lightbox-shown {
+  display: block !important;
+}
+
+@media (max-width: 992px) {
+  .item-info-sidebar h3 {
+    margin-top: 20px;
+  }
+  .lightbox-thumb {
+    display: inline-block;
+    margin-right: 2px;
+  }
+}
