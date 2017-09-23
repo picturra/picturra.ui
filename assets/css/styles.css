@@ -3,8 +3,8 @@
 @import 'base/MyFontsWebfontsKit.css';
 
 /*Layouts*/
-@import 'layouts/portfolio-main.css';
 @import 'layouts/lightbox-gallery.css';
+@import 'layouts/portfolio-main.css';
 
 /*Components*/
 @import 'components/portfolio-gallery.css';
