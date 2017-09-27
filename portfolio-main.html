@@ -35,13 +35,15 @@
           </div>
         </div>
         <div class="col-md-8 profile-bio-content">
-          <span class="profile-category">Portraits in Oils</span>
-          <span class="profile-location"><span class="glyphicon glyphicon-map-marker"></span>Portland, Oregon</span>
-          <ul class="list-inline profile-stats">
-            <li>1,210 Followers</li>
-            <li>2108 Following</li>
-            <li>87 Pieces Sold</li>
-          </ul>
+          <div class="bio-stats-div">
+            <span class="profile-category">Portraits in Oils</span>
+            <span class="profile-location"><span class="glyphicon glyphicon-map-marker"></span>Portland, Oregon</span>
+            <ul class="list-inline profile-stats">
+              <li>1,210 Followers</li>
+              <li>2108 Following</li>
+              <li>87 Pieces Sold</li>
+            </ul>
+          </div>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean luctus, justo vel scelerisque bibendum, massa orci
 gravida lacus, eu ultrices mi purus pulvinar erat. Quisque tortor ante viverra fusce. Lorem ipsum dolor sit amet,
 consectetur adipiscing elit. Aenean luctus, justo vel scelerisque bibendum, massa orci gravida lacus, eu ultrices mi
@@ -54,10 +56,12 @@ purus pulvinar erat. Quisque tortor ante viverra.</p>
   <!-- Gallery -->
 
       <!-- Filter Buttons -->
-      <div class="filter-wrapper">
-        <div class="gallery-filter-row col-md-12">
+      <div class="filter-wrapper row">
+        <div class="all-btn-div col-md-1">
+          <button type="button" class="btn btn-default btn-show-all selected" data-filter="*">View All</button>
+        </div>
+        <div class="gallery-filter-row col-md-11">
             <div class="filters-button-group" role="group" aria-label="Portfolio filters">
-              <button type="button" class="btn btn-default btn-show-all selected" data-filter="*">View All</button>
               <button type="button" class="btn btn-default" data-filter=".painting">Painting</button>
               <button type="button" class="btn btn-default" data-filter=".photography">Photography</button>
               <button type="button" class="btn btn-default" data-filter=".landscape">Landscape</button>
@@ -307,6 +311,7 @@ purus pulvinar erat. Quisque tortor ante viverra.</p>
         </a>
 
       </div>
+    </div>
 
     <!-- Message Modal -->
 <div class="modal fade" id="message-modal" tabindex="-1" role="dialog" aria-labelledby="message-modal-label">
@@ -331,7 +336,6 @@ purus pulvinar erat. Quisque tortor ante viverra.</p>
 
 <!-- Follow button -->
 <button class="btn small-follow-btn"><span class="small-follow-btn-icon">	&#43;</span><span class="small-follow-btn-text">Follow<span></span></button>
-
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

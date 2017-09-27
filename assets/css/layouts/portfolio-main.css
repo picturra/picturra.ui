@@ -55,6 +55,14 @@
   font-family: NeuzeitGro-Bol;
 }
 
+@media(max-width: 992px) {
+  .bio-stats-div {
+    position: absolute;
+    left: 195px;
+    top: -210px;
+  }
+}
+
 @media (max-width: 576px) {
   .profile-bio {
     margin-bottom: 20px;

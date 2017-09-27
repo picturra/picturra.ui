@@ -11,7 +11,7 @@ $(document).ready(function () {
   });
 
   // Isotope filters
-  $('.gallery-filter-row').on('click', 'button', function() {
+  $('.filter-wrapper').find('button').on('click', function() {
     var filterVal = $(this).attr('data-filter');
 
     $gallery.isotope({ filter: filterVal });
