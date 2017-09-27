@@ -2,7 +2,7 @@
   margin-bottom: 100px;
 }
 
-.gallery-filter-row {
+.lightbox-category-row {
   margin-top: 60px;
 }
 
@@ -11,6 +11,29 @@
   left: -25px;
   margin-bottom: 10px;
   font-family: NeuzeitGro-Bol;
+}
+
+.lightbox-category-links {
+  background-color: transparent;
+  color: #000000 !important;
+  border-bottom-style: solid;
+  border-bottom-width: 3px;
+  border-bottom-color: transparent;
+  margin-bottom: 1px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.lightbox-category-links:hover,
+.lightbox-category-links:focus,
+.lightbox-category-links:active {
+  text-decoration: none;
+  background-color: transparent !important;
+  border-bottom-style: solid !important;
+  border-bottom-color: #000000 !important;
+  border-bottom-width: 3px !important;
 }
 
 .item-info-sidebar span {
@@ -57,12 +80,17 @@ text-align: center;
 }
 
 /*lightbox and item views*/
+.responsive-thumbnails {
+  display: none;
+}
+
 .lightbox-thumb {
   object-fit: cover;
   width: 70px;
   height: 70px;
   clip: rect(0px, 60px, 60px, 0px);
   margin-bottom: 5px;
+  cursor: pointer;
 }
 
 .lightbox-thumb:hover {
@@ -83,8 +111,12 @@ text-align: center;
   .item-info-sidebar h3 {
     margin-top: 20px;
   }
-  .lightbox-thumb {
-    display: inline-block;
-    margin-right: 2px;
+  .left-thumbnails {
+    display: none;
+  }
+
+  .responsive-thumbnails {
+    display: block;
+    margin-top: 4px;
   }
 }
