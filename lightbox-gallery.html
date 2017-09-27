@@ -53,18 +53,30 @@
     <!-- Begin page content -->
     <div class="container">
       <!-- Filters row -->
-      <div class="row gallery-filter-row">
-        <a href="main.html">
-          <div class="col-md-2 all-link">
-            <span class="glyphicon glyphicon-chevron-left"></span><span></span> All Artwork</span>
-          </div>
-        </a>
+      <div class="row gallery-filter-row lightbox-category-row">
+
+        <div class="col-md-2 all-link">
+          <a href="main.html">
+            <span class="glyphicon glyphicon-chevron-left"></span><span> All Artwork</span>
+          </a>
+        </div>
         <div class="col-md-10">
           <div class="filters-button-group" role="group" aria-label="Portfolio filters">
-            <button type="button" class="btn btn-default" data-filter=".painting">Painting</button>
-            <button type="button" class="btn btn-default" data-filter=".photography">Photography</button>
-            <button type="button" class="btn btn-default" data-filter=".landscape">Landscape</button>
-            <button type="button" class="btn btn-default" data-filter=".portrait">Portrait</button>
+            <a href="main.html" class="lightbox-category-links">
+              <span>Painting</span>
+            </a>
+            <a href="main.html" class="lightbox-category-links">
+              <span>Photography</span>
+            </a>
+            <a href="main.html" class="lightbox-category-links">
+              <span>Landscape</span>
+            </a>
+            <a href="main.html" class="lightbox-category-links">
+              <span>Portrait</span>
+            </a>
+            <a href="main.html" class="lightbox-category-links">
+              <span>Painting</span>
+            </a>
           </div>
         </div>
       </div>
@@ -72,7 +84,7 @@
       <!-- Gallery and info wrapper -->
       <!-- Thumbnails -->
       <div class="row expanded-gallery-wrapper">
-        <div class="col-md-1">
+        <div class="col-md-1 left-thumbnails">
           <img src="assets/images/painting1.JPG" class="lightbox-thumb" alt="">
           <img src="assets/images/painting2.JPG" class="lightbox-thumb" alt="">
           <img src="assets/images/painting3.JPG" class="lightbox-thumb" alt="">
@@ -89,6 +101,12 @@
           <a href="assets/images/painting3.JPG" data-fancybox="item-views" data-caption="Made with the best oil paints available">
             <img src="assets/images/painting3.JPG" class="img-responsive" alt="">
           </a>
+        </div>
+
+        <div class="col-md-1 responsive-thumbnails">
+          <img src="assets/images/painting1.JPG" class="lightbox-thumb" alt="">
+          <img src="assets/images/painting2.JPG" class="lightbox-thumb" alt="">
+          <img src="assets/images/painting3.JPG" class="lightbox-thumb" alt="">
         </div>
 
         <!-- Info sidebar -->
@@ -115,6 +133,11 @@
 
     </div>
 
+    <!-- "To top" button -->
+    <button class="btn top-btn"><span class="glyphicon glyphicon-chevron-up"></span><span class="top-btn-text">Top</span></button>
+
+    <!-- Follow button -->
+    <button class="btn small-follow-btn"><span class="small-follow-btn-icon">	&#43;</span><span class="small-follow-btn-text">Follow<span></span></button>
 
 <!-- Sticky Footer -->
 <footer class="footer">

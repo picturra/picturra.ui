@@ -8,3 +8,12 @@ $('.lightbox-thumb').click(function() {
       $('.lightbox-main').find(`[src='${$clickedThumbSrc}']`).addClass('lightbox-shown');
     };
 });
+
+// Fancybox customizations
+$('[data-fancybox]').fancybox({
+  buttons: [
+    'fullScreen',
+    'close'
+  ],
+  animationEffect: 'fade',
+});
