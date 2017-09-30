@@ -1,0 +1,35 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3450440, 2017-09-11T19:07:44-0400
+ *
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are
+ * explicitly restricted from using the Licensed ../../webfonts(s).
+ *
+ * You may obtain a valid license at the URLs below.
+ *
+ * Webfont: NeuzeitGro-Lig by URW++
+ * URL: https://www.myfonts.com/fonts/urw/neuzeit-grotesk/t-light/
+ *
+ * Webfont: NeuzeitGro-Bol by URW++
+ * URL: https://www.myfonts.com/fonts/urw/neuzeit-grotesk/t-bold/
+ *
+ * Webfont: NeuzeitGro-Reg by URW++
+ * URL: https://www.myfonts.com/fonts/urw/neuzeit-grotesk/t-regular/
+ *
+ *
+ * License: https://www.myfonts.com/viewlicense?type=web&buildid=3450440
+ * Licensed pageviews: 10,000
+ * ../../webfonts copyright: Copyright 2010 URW++ Design &amp; Development Hamburg
+ *
+ * © 2017 MyFonts Inc
+*/
+
+
+@font-face {font-family: 'NeuzeitGro-Lig';src: url('../../webfonts/34A648_0_0.eot');src: url('../../webfonts/34A648_0_0.eot?#iefix') format('embedded-opentype'),url('../../webfonts/34A648_0_0.woff2') format('woff2'),url('../../webfonts/34A648_0_0.woff') format('woff'),url('../../webfonts/34A648_0_0.ttf') format('truetype');}
+
+
+@font-face {font-family: 'NeuzeitGro-Bol';src: url('../../webfonts/34A648_1_0.eot');src: url('../../webfonts/34A648_1_0.eot?#iefix') format('embedded-opentype'),url('../../webfonts/34A648_1_0.woff2') format('woff2'),url('../../webfonts/34A648_1_0.woff') format('woff'),url('../../webfonts/34A648_1_0.ttf') format('truetype');}
+
+
+@font-face {font-family: 'NeuzeitGro-Reg';src: url('../../webfonts/34A648_2_0.eot');src: url('../../webfonts/34A648_2_0.eot?#iefix') format('embedded-opentype'),url('../../webfonts/34A648_2_0.woff2') format('woff2'),url('../../webfonts/34A648_2_0.woff') format('woff'),url('../../webfonts/34A648_2_0.ttf') format('truetype');}

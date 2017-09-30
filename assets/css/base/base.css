@@ -1,0 +1,74 @@
+/*================*/
+/*Baseline styling*/
+body {
+  font-family: NeuzeitGro-Reg !important;
+  color: #000000 !important;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: NeuzeitGro-Bol !important;
+}
+
+.layout-section-header:after {
+  content: "";
+  display: block;
+  width: 100%;
+  border-bottom-style: solid;
+  border-bottom-width: 3px;
+  border-bottom-color: #000000;
+  margin-top: 10px;
+}
+
+a, a:hover {
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+/*All Input Boxes Styling*/
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+  box-shadow: none;
+  border: 0;
+  background: #000000;
+  color: #ffffff;
+}
+
+/*Buttons*/
+.btn {
+  border-radius: 0;
+  border: 0;
+  background-color: #555555;
+  font-family: NeuzeitGro-Bol;
+  color: #ffffff !important;
+}
+
+.btn:hover {
+  background-color: #000000;
+}
+
+.btn.active, .btn:focus, .btn:active {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+/*Modals*/
+.modal-content {
+  border-radius: 0;
+}
