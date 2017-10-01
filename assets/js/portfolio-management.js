@@ -1,5 +1,7 @@
 $( function() {
-    $('#sortable').sortable();
+    $('#sortable').sortable({
+      handle: '.drag-drop-arrows'
+    });
     $('#sortable').disableSelection();
   }
 )

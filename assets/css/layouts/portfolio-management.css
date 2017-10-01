@@ -64,7 +64,7 @@
 }
 
 .artwork-sort {
-  justify-content: space-around;
+  justify-content: space-between;
   background-color: #ffffff;
 }
 
@@ -83,7 +83,29 @@
   color: #000000;
 }
 
-@media (max-width: 320px) {
+.drag-drop-arrows {
+  padding: 10px;
+}
+
+.drag-drop-arrows span {
+  font-size: 14px !important;
+  margin: 0 !important;
+}
+
+.collections-sort {
+  justify-content: initial;
+}
+
+.collections-sort > * {
+  margin-right: 20px;
+}
+
+.collections-sort>*:last-child {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+@media (max-width: 340px) {
   .artwork-thumb {
     display: none;
   }

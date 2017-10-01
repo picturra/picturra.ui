@@ -101,7 +101,7 @@
                 <div class="row">
                   <div class="col-xs-12">
                     <button class="btn btn-default">&#43; Add Collection</button>
-                    <button class="btn btn-default">Sort</button>
+                    <button class="btn btn-default" data-toggle="modal" data-target="#collections-sort-modal">Sort</button>
                   </div>
                 </div>
                 <div class="row">
@@ -258,14 +258,14 @@
     </div>
 
     <!-- Artwork sort modal -->
-      <div class="modal fade" id="artwork-sort-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal fade" id="artwork-sort-modal" tabindex="-1" role="dialog" aria-labelledby="artwork-sort-modal">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-body">
                         <h4 class="layout-section-header">Sort Artwork</h4>
                         <div class="row">
                           <div class="col-xs-12">
-                            <p>Add Artwork to the Collections and drag the pieces to reorder.</p>
+                            <p>Add Artwork to the Collections or click and drag the arrows to reorder.</p>
                           </div>
                         </div>
                         <div class="row">
@@ -275,36 +275,42 @@
                               <li><img src="./assets/images/painting1.JPG" alt="" class="artwork-thumb img-responsive"></li>
                               <li>White Church</li>
                               <li>Oil Paintings</li>
+                              <li class="drag-drop-arrows"><span class="glyphicon glyphicon-chevron-up"></span><span class="glyphicon glyphicon-chevron-down"></span></li>
                             </ul>
                             <ul class="artwork-list-wrapper artwork-sort">
                               <li>02</li>
                               <li><img src="./assets/images/painting2.JPG" alt="" class="artwork-thumb img-responsive"></li>
                               <li>White Church</li>
                               <li>Oil Paintings</li>
+                              <li class="drag-drop-arrows"><span class="glyphicon glyphicon-chevron-up"></span><span class="glyphicon glyphicon-chevron-down"></span></li>
                             </ul>
                             <ul class="artwork-list-wrapper artwork-sort">
                               <li>03</li>
                               <li><img src="./assets/images/painting3.JPG" alt="" class="artwork-thumb img-responsive"></li>
                               <li>White Church</li>
                               <li>Oil Paintings</li>
+                              <li class="drag-drop-arrows"><span class="glyphicon glyphicon-chevron-up"></span><span class="glyphicon glyphicon-chevron-down"></span></li>
                             </ul>
                             <ul class="artwork-list-wrapper artwork-sort">
                               <li>04</li>
                               <li><img src="./assets/images/painting4.JPG" alt="" class="artwork-thumb img-responsive"></li>
                               <li>White Church</li>
                               <li>Oil Paintings</li>
+                              <li class="drag-drop-arrows"><span class="glyphicon glyphicon-chevron-up"></span><span class="glyphicon glyphicon-chevron-down"></span></li>
                             </ul>
                             <ul class="artwork-list-wrapper artwork-sort">
                               <li>05</li>
                               <li><img src="./assets/images/painting5.JPG" alt="" class="artwork-thumb img-responsive"></li>
                               <li>White Church</li>
                               <li>Oil Paintings</li>
+                              <li class="drag-drop-arrows"><span class="glyphicon glyphicon-chevron-up"></span><span class="glyphicon glyphicon-chevron-down"></span></li>
                             </ul>
                             <ul class="artwork-list-wrapper artwork-sort">
                               <li>06</li>
                               <li><img src="./assets/images/painting6.JPG" alt="" class="artwork-thumb img-responsive"></li>
                               <li>White Church</li>
                               <li>Oil Paintings</li>
+                              <li class="drag-drop-arrows"><span class="glyphicon glyphicon-chevron-up"></span><span class="glyphicon glyphicon-chevron-down"></span></li>
                             </ul>
                           </div>
                         </div>
@@ -319,6 +325,57 @@
                     </div>
                   </div>
                 </div>
+                <!-- End Artwork Modal -->
+
+                <!-- Collections sort modal -->
+                  <div class="modal fade" id="collections-sort-modal" tabindex="-1" role="dialog" aria-labelledby="collections-sort-modal">
+                    <div class="modal-dialog modal-sm" role="document">
+                      <div class="modal-content">
+                        <div class="modal-body">
+                          <h4 class="layout-section-header">Sort Collections</h4>
+                          <div class="row">
+                            <div class="col-xs-12">
+                              <p>Add Collections or click and drag the arrows to reorder.</p>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-xs-12" id="sortable">
+                              <ul class="collections-list collections-sort">
+                                <li>01</li>
+                                <li>Oil Paintings</li>
+                                <li class="drag-drop-arrows"><span class="glyphicon glyphicon-chevron-up"></span><span class="glyphicon glyphicon-chevron-down"></span></li>
+                              </ul>
+                              <ul class="collections-list collections-sort">
+                                <li>02</li>
+                                <li>Photographs</li>
+                                <li class="drag-drop-arrows"><span class="glyphicon glyphicon-chevron-up"></span><span class="glyphicon glyphicon-chevron-down"></span></li>
+                              </ul>
+                              <ul class="collections-list collections-sort">
+                                <li>03</li>
+                                <li>Landscapes</li>
+                                <li class="drag-drop-arrows"><span class="glyphicon glyphicon-chevron-up"></span><span class="glyphicon glyphicon-chevron-down"></span></li>
+                              </ul>
+                              <ul class="collections-list collections-sort">
+                                <li>04</li>
+                                <li>Portraits</li>
+                                <li class="drag-drop-arrows"><span class="glyphicon glyphicon-chevron-up"></span><span class="glyphicon glyphicon-chevron-down"></span></li>
+                              </ul>
+
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-xs-12 artwork-sort-btns">
+                              <a href="#" data-dismiss="modal"><span class="glyphicon glyphicon-chevron-left"></span> Cancel</a>
+                              <button class="btn btn-default">Save</button>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End collections sort modal -->
+
               </div>
             </div>
           </div>
