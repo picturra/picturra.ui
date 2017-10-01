@@ -94,6 +94,7 @@
 
 .collections-sort {
   justify-content: initial;
+  background-color: #ffffff;
 }
 
 .collections-sort > * {
