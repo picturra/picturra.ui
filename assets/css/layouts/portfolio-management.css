@@ -64,8 +64,13 @@
 }
 
 .artwork-sort {
-  justify-content: space-between;
+  justify-content: initial;
   background-color: #ffffff;
+}
+
+.artwork-sort li {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .artwork-sort-btns {
@@ -101,9 +106,8 @@
   margin-right: 20px;
 }
 
-.collections-sort>*:last-child {
-  margin-left: auto;
-  margin-right: 0;
+.ui-sortable>ul:hover {
+  cursor: ns-resize;
 }
 
 @media (max-width: 340px) {
