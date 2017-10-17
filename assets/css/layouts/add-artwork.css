@@ -1,0 +1,55 @@
+.add-artwork-wrapper {
+  margin-top: 77px;
+  padding-bottom: 60px;
+}
+
+.add-artwork-wrapper .row {
+  margin-bottom: 20px;
+}
+
+.add-artwork-wrapper .layout-section-header {
+  margin-bottom: 30px;
+}
+
+.add-art-image-wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.add-art-image-box-div {
+  margin: 20px;
+}
+
+.add-art-image-box,
+.add-art-image-box-sm {
+  height: 250px;
+  width: 250px;
+  border: solid 3px #000;
+  font-family: NeuzeitGro-Bol;
+  font-size: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-art-image-box-sm {
+  width: 150px;
+  height: 150px;
+}
+
+.add-art-small-boxes-div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.add-art-image-box-div > a:hover {
+  text-decoration: none;
+}
+
+.btn-add-artwork {
+  width: 200px;
+  background-color: #fff;
+  border: solid 3px #000;
+  color: #000 !important;
+}
