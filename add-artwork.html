@@ -73,18 +73,20 @@
     </nav>
 
     <!-- Begin page content -->
-    <div class="container-fluid add-artwork-wrapper">
+    <div class="container add-artwork-wrapper">
       <div class="row">
         <div class="col-xs-12">
           <button class="cancel-btn pull-left"><span class="glyphicon glyphicon-chevron-left"></span> Cancel</button>
         </div>
       </div>
-      <div class="row">
+
+      <!-- Add Painting -->
+      <div class="row artwork-details">
         <div class="col-xs-12">
           <h4 class="layout-section-header">Artwork Details</h4>
           <div class="row">
             <div class="col-sm-4">
-              <form>
+              <!-- <form>
                 <div class="form-group">
                   <select id="select-category" class="form-control">
                     <option>Select a category</option>
@@ -98,8 +100,8 @@
                     <option>Digital + New Media</option>
                   </select>
                 </div>
-              </form>
-              <!-- <div class="dropdown dropdown-btn-div">
+              </form> -->
+              <div class="dropdown dropdown-btn-div">
                 <button class="dropdown-btn dropdown-toggle" type="button" id="dropdown-category" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                     Select a category
                     <span class="glyphicon glyphicon-chevron-down"></span>
@@ -110,11 +112,10 @@
                   <li><a href="#">Sculpture</a></li>
                   <li><a href="#">Photography</a></li>
                   <li><a href="#">Printmaking</a></li>
-                  <li><a href="#">Film + Video</a></li>
                   <li><a href="#">Performance</a></li>
                   <li><a href="#">Digital + New Media</a></li>
                 </ul>
-              </div> -->
+              </div>
 
               <div class="input-group">
                 <input type="text" class="form-control" required>
@@ -126,21 +127,21 @@
               </div>
             </div>
 
-            <div class="col-sm-7 col-sm-offset-1">
+            <div class="col-sm-5 col-sm-offset-1">
               <div class="row">
                 <div class="col-sm-2">
-                  <input type="text"  placeholder="in" class="form-control" required>
+                  <input type="number"  placeholder="in" class="form-control" required>
                   <label for="display-name-input">Length</label>
                 </div>
                 <div class="col-sm-2">
-                  <input type="text"  placeholder="in" class="form-control" required>
+                  <input type="number"  placeholder="in" class="form-control" required>
                   <label for="display-name-input">Width</label>
                 </div>
                 <div class="col-sm-2">
-                  <input type="text"  placeholder="in" class="form-control" required>
+                  <input type="number"  placeholder="in" class="form-control" required>
                   <label for="display-name-input">Height</label>
                 </div>
-                <div class="col-sm-2 pull-right">
+                <div class="col-sm-3 col-sm-offset-3">
                   <input type="text"  class="form-control" required>
                   <label for="display-name-input">Year</label>
                 </div>
@@ -157,13 +158,13 @@
         </div>
       </div>
 
-      <div class="row">
+      <div class="row artwork images">
         <div class="col-sm-12">
           <h4 class="layout-section-header">Artwork Images</h4>
           <p>Click + to upload an image. JPG, PNG, and TIFF accepted.</p>
 
           <div class="row">
-            <div class="col-sm-7 add-art-image-wrapper">
+            <div class="col-sm-6 add-art-image-wrapper">
               <div class="add-art-image-box-div">
                 <a href="#">
                   <div class="add-art-image-box">
@@ -197,6 +198,7 @@
                 <div class="col-sm-12">
                   <input type="text"  class="form-control" placeholder="#Landscape" required>
                   <label for="display-name-input">Image tags</label>
+                  <p>Add up to 25 tags so Collectors can easily find your work in searches.</p>
                 </div>
               </div>
             </div>
@@ -205,69 +207,137 @@
         </div>
       </div>
 
-      <div class="row">
+      <!-- Painting Price and Shipping -->
+      <div class="row painting-price-and-shipping">
         <div class="col-sm-12">
           <h4 class="layout-section-header">Artwork Price & Shipping</h4>
         </div>
       </div>
       <div class="row">
-        <div class="col-sm-12">
-          <div class="btn-group" data-toggle="buttons">
-            <label class="btn btn-default">
-              <input type="radio" name="for sale" id="sale" autocomplete="off" checked> For Sale
-            </label>
-            <label class="btn btn-default">
-              <input type="radio" name="not for sale" id="not-sale" autocomplete="off"> Not For Sale
-            </label>
+        <div class="col-sm-3">
+          <div class="dropdown dropdown-btn-div">
+            <button class="dropdown-btn dropdown-toggle" type="button" id="dropdown-category" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                Is this piece for sale?
+                <span class="glyphicon glyphicon-chevron-down"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdown-category">
+              <li><a href="#">For Sale</a></li>
+              <li><a href="#">Not For Sale</a></li>
+            </ul>
           </div>
         </div>
       </div>
       <div class="row">
         <div class="col-sm-2">
+          <h5>Artwork Price*</h5>
           <div class="input-group">
             <div class="input-group-addon">$</div>
             <input type="number"  placeholder="usd" class="form-control" required>
           </div>
-          <label for="display-name-input">Artwork Price*</label>
           <p>Be Sure to include packaging and handling fees in your price</p>
         </div>
-        <div class="col-sm-4 col-sm-offset-1">
-          <div class="form-group">
-            <select id="select-shipping" class="form-control">
-              <option>Generate Shipping Label for Me</option>
-              <option>Set Price + Manage Myself</option>
-            </select>
-            <label for="select-shipping">
-              <p>If you select "Generate Shipping Label for Me" the Collector pays for shipping based on their delivery address.</p>
-              <p>If you select "Set Price + Manage Myself" the Collector pays a set shipping price regardless of their delivery address.</p>
-            </label>
+        <div class="col-sm-4 col-sm-offset-2">
+          <h5>Artwork Shipping Method</h5>
+          <div class="dropdown dropdown-btn-div">
+            <button class="dropdown-btn dropdown-toggle" type="button" id="dropdown-category" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                Select
+                <span class="glyphicon glyphicon-chevron-down"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdown-category">
+              <li><a href="#">Generate a Shipping Label for Me</a></li>
+              <li><a href="#">Set Price + Manage Myself</a></li>
+            </ul>
+          </div>
+          <p>The Collector pays for shipping based on their delivery address.</p>
+          <p>The Collector pays the shipping price you’ve set regardless of their delivery address.</p>
+        </div>
+      </div>
+
+      <!-- Shipping, Picturra Generated -->
+      <div class="shipping-picturra-generated">
+        <div class="row">
+          <div class="col-sm-2">
+            <h5>Package Origin</h5>
+              <div class="dropdown dropdown-btn-div">
+                <button class="dropdown-btn dropdown-toggle" type="button" id="dropdown-category" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    Select
+                    <span class="glyphicon glyphicon-chevron-down"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdown-category">
+                  <li><a href="#">Address 1</a></li>
+                  <li><a href="#">Address 2</a></li>
+                </ul>
+              </div>
+            </div>
+          <div class="col-sm-6 col-sm-offset-2">
+            <h5>Package Weight</h5>
+            <div class="row">
+                <div class="col-sm-2">
+                  <input type="number"  placeholder="lbs" class="form-control" required>
+                </div>
+                <div class="col-sm-2">
+                  <input type="number"  placeholder="oz" class="form-control" required>
+                </div>
+                <div class="col-sm-2 col-sm-offset-1">
+                  <input type="number"  placeholder="in" class="form-control" required>
+                  <label for="display-name-input">Length*</label>
+                </div>
+                <div class="col-sm-2">
+                  <input type="number"  placeholder="in" class="form-control" required>
+                  <label for="display-name-input">Height*</label>
+                </div>
+                <div class="col-sm-2">
+                  <input type="number"  placeholder="in" class="form-control" required>
+                  <label for="display-name-input">Depth*</label>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-2">
+            <h5>Shipping Service</h5>
+            <button class="btn-shipping-modal" data-toggle="modal" data-target="#shipping-modal">Select<span>+</span></button>
+          </div>
+          <div class="col-sm-6 col-sm-offset-2">
+            <h5>Shipping Insurance</h5>
+            <div class="dropdown dropdown-btn-div">
+              <button class="dropdown-btn dropdown-toggle" type="button" id="dropdown-category" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                  Insure this Package?
+                  <span class="glyphicon glyphicon-chevron-down"></span>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdown-category">
+                <li><a href="#">Yes, Insure this Package</a></li>
+                <li><a href="#">No, do not Insure this Package</a></li>
+              </ul>
+            </div>
+            <p>Receive a refund for the full value of this Artwork in the event your package is lost or damaged during shipping. If you insure your package, 2% of the Artwork’s value will be deducted from your payout.</p>
           </div>
         </div>
       </div>
+
+      <!-- Shipping, Collector Generated -->
+      <div class="shipping-collector-generated">
         <div class="row">
           <div class="col-sm-2">
+            <h5>Domestic Shipping Price</h5>
             <div class="input-group">
               <div class="input-group-addon">$</div>
-              <input type="number"  placeholder="usd" class="form-control" required>
+            <input type="number"  placeholder="usd" class="form-control" required>
             </div>
-            <label for="display-name-input">Artwork Price*</label>
-          </div>
-          <div class="col-sm-5 col-sm-offset-1">
-            <div class="row">
-              <div class="col-sm-12">
-                <h4>International Shipping Price</h4>
-                <p>Will you ship to Collectors outside of US?</p>
-              </div>
             </div>
+          <div class="col-sm-6 col-sm-offset-2">
+            <h5>International Shipping Price</h5>
             <div class="row">
-              <div class="col-sm-4">
-                <div class="btn-group" data-toggle="buttons">
-                  <label class="btn btn-default">
-                    <input type="radio" name="for sale" id="ship-international" autocomplete="off" checked> Yes
-                  </label>
-                  <label class="btn btn-default">
-                    <input type="radio" name="not for sale" id="ship-us" autocomplete="off"> No
-                  </label>
+              <div class="col-sm-8">
+                <div class="dropdown dropdown-btn-div">
+                  <button class="dropdown-btn dropdown-toggle" type="button" id="dropdown-category" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                      Ship to Collectors outside of the US?
+                      <span class="glyphicon glyphicon-chevron-down"></span>
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdown-category">
+                    <li><a href="#">Yes, I will accept International Orders</a></li>
+                    <li><a href="#">No, I will not accept International Orders</a></li>
+                  </ul>
                 </div>
               </div>
               <div class="col-sm-4">
@@ -279,6 +349,121 @@
             </div>
           </div>
         </div>
+      </div>
+      <!-- End Add Painting -->
+
+      <!-- Add Performance -->
+      <div class="row artwork-details">
+        <div class="col-xs-12">
+          <h4 class="layout-section-header">Artwork Details</h4>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="dropdown dropdown-btn-div">
+                <button class="dropdown-btn dropdown-toggle" type="button" id="dropdown-category" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    Select a category
+                    <span class="glyphicon glyphicon-chevron-down"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdown-category">
+                  <li><a href="#">Painting</a></li>
+                  <li><a href="#">Drawing + Illustration</a></li>
+                  <li><a href="#">Sculpture</a></li>
+                  <li><a href="#">Photography</a></li>
+                  <li><a href="#">Printmaking</a></li>
+                  <li><a href="#">Performance</a></li>
+                  <li><a href="#">Digital + New Media</a></li>
+                </ul>
+              </div>
+
+              <div class="input-group">
+                <input type="text" class="form-control" required>
+                <label for="display-name-input">Title*</label>
+              </div>
+              <div class="input-group">
+                <input type="text" class="form-control" required>
+                <label for="display-name-input">Medium*</label>
+              </div>
+            </div>
+
+            <div class="col-sm-5 col-sm-offset-1">
+              <div class="row">
+                <div class="col-sm-3">
+                  <input type="number"  placeholder="in" class="form-control" required>
+                  <label for="display-name-input">Year</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12">
+                  <input type="text"  class="form-control" required>
+                  <label for="display-name-input">About the Artwork</label>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="row artwork images">
+        <div class="col-sm-12">
+          <h4 class="layout-section-header">Artwork Images</h4>
+          <p>Click + to upload an image. JPG, PNG, and TIFF accepted.</p>
+
+          <div class="row">
+            <div class="col-sm-6 add-art-image-wrapper">
+              <div class="add-art-image-box-div">
+                <a href="#">
+                  <div class="add-art-image-box">
+                    <span>+</span>
+                  </div>
+                </a>
+                <p>Primary image*</p>
+              </div>
+              <div class="add-art-small-boxes-div">
+                <div class="add-art-image-box-div">
+                  <a href="#">
+                    <div class="add-art-image-box-sm">
+                      <span>+</span>
+                    </div>
+                  </a>
+                  <p>Alternate image*</p>
+                </div>
+                <div class="add-art-image-box-div">
+                  <a href="#">
+                    <div class="add-art-image-box-sm">
+                      <span>+</span>
+                    </div>
+                  </a>
+                  <p>Alternate image*</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-3 col-sm-offset-1">
+              <div class="row">
+                <div class="col-sm-12">
+                  <input type="text"  class="form-control" placeholder="#Landscape" required>
+                  <label for="display-name-input">Image tags</label>
+                  <p>Add up to 25 tags so Collectors can easily find your work in searches.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Printmaking Price and Shipping -->
+      <div class="row painting-price-and-shipping">
+        <div class="col-sm-12">
+          <h4 class="layout-section-header">Artwork Price & Shipping</h4>
+          <p>Performance sales are not supported at this time.</p>
+        </div>
+      </div>
+      
+      <!-- End Add Performance -->
+
+
+        <!-- Submit Button -->
         <div class="row">
           <div class="col-sm-12">
             <button class="btn btn-default btn-add-artwork pull-right">+ Add Artwork</button>
@@ -286,6 +471,83 @@
         </div>
     </div>
     <!-- End Page Content -->
+
+    <!-- Shipping Modal -->
+    <div class="modal fade" id="shipping-modal" tabindex="-1" role="dialog" aria-labelledby="collections-sort-modal">
+      <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <h4 class="layout-section-header">Select a Shipping Service</h4>
+            <div class="row">
+              <div class="col-xs-12">
+                <p>Add Collections or click and drag the arrows to reorder.</p>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <ul class="shipping-list-wrapper">
+                    <li>
+                      <a>
+                      <ul class="shipping-list-row">
+                        <li>USPS Parcel Select Ground</li>
+                        <li>2 - 9 Business Days</li>
+                        <li>$14 - 17.50</li>
+                      </ul>
+                    </a>
+                    </li>
+                    <li>
+                      <a>
+                      <ul class="shipping-list-row">
+                        <li>USPS Retail Ground</li>
+                        <li>2 -7 Business Days</li>
+                        <li>$14 - 17.90</li>
+                      </ul>
+                    </a>
+                    </li>
+                    <li>
+                      <a>
+                      <ul class="shipping-list-row">
+                        <li>USPS Priority Mail Large Flat Rate Box</li>
+                        <li>1 - 3 Business Days</li>
+                        <li>$13.60</li>
+                      </ul>
+                    </a>
+                    </li>
+                    <li>
+                      <a>
+                      <ul class="shipping-list-row">
+                        <li>FedEx 2 Day Air</li>
+                        <li>2 Business Days</li>
+                        <li>$21.78 - $72.89</li>
+                      </ul>
+                    </a>
+                    </li>
+                    <li>
+                      <a>
+                      <ul class="shipping-list-row">
+                        <li>FedEx Express Saver</li>
+                        <li>7 - 10 Business Days</li>
+                        <li>$14 - 17.90</li>
+                      </ul>
+                    </a>
+                    </li>
+                    <li>
+                      <a>
+                      <ul class="shipping-list-row">
+                        <li>FedEx Standard Overnight</li>
+                        <li>1 Business Day</li>
+                        <li>$56.60</li>
+                      </ul>
+                    </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Shipping Modal -->
 
     <!-- Sticky Footer -->
     <footer class="footer">
