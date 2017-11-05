@@ -87,7 +87,7 @@
         </div>
 
         <div class="col-sm-12">
-          <h5>You Key Image</h5>
+          <h5>Your Key Image</h5>
 
           <div class="row">
             <div class="col-sm-3 add-art-image-wrapper">
@@ -121,15 +121,14 @@
                 </div>
               </div>
               <div class="row">
-                <div class="col-sm-12">
-                  <input type="text"  class="form-control" required>
+                <div class="col-sm-8">
+                  <textarea rows="5"  class="form-control" required></textarea>
                   <label for="display-name-input">Artists Statement*</label>
                   <p>Share a breif statement about yourself and your artistic practice.</p>
                 </div>
               </div>
               <div class="row add-artwork-btn-row">
                 <div class="col-sm-4">
-                  <h5>Shipping Service</h5>
                   <button class="btn-line-modal">Add Your CV<span>+</span></button>
                   <p>Upload your Professional CV, pdf accepted.*</p>
                 </div>
@@ -178,7 +177,7 @@
                         Select
                         <span class="glyphicon glyphicon-chevron-down"></span>
                     </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdown-category">
+                    <ul class="dropdown-menu dropdown-scroll" aria-labelledby="dropdown-category">
                       <li><a href="#">AL</a></li>
                       <li><a href="#">AK</a></li>
                       <li><a href="#">AZ</a></li>
@@ -303,7 +302,7 @@
           </div>
           <div class="row">
             <div class="col-sm-12">
-              <span class="glyphicon glyphicon-lock"></span><h8> This information will be securely processed by our payments partner.</h8>
+              <span class="glyphicon glyphicon-lock"></span><h8> This information will be securely processed by our <a href="#">payments partner</a>.</h8>
             </div>
           </div>
         </div>
@@ -358,7 +357,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-5 col-sm-offset-1">
+            <div class="col-sm-6 col-sm-offset-1">
               <div class="row">
                 <div class="col-sm-12">
                   <h5>Will you allow your Collectors to return Artwork for a Full Refund?</h5>
@@ -387,19 +386,165 @@
       </div>
       <!-- End Transaction Terms -->
 
+
       <!-- Submit -->
       <div class="row">
-        <div class="col-sm-6 col-sm-offset-6">
+        <div class="col-sm-12 text-right">
           <p>By clicking Save, you confirm that you’ve read and agree to Picturra’s <a>Seller Terms and Conditions</a></p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-3 col-sm-offset-9">
-          <button class="btn btn-default btn-artist-save">Save and Finish</button>
+          <button class="btn btn-default btn-lg-outline" data-toggle="modal" data-target="#order-submit-modal">Save and Finish</button>
         </div>
       </div>
       <!-- End Submit -->
+
+      <!-- Your Bio Section -->
+      <div class="row">
+        <div class="col-xs-12">
+          <h4 class="layout-section-header">Your Bio</h4>
+        </div>
+
+        <div class="col-sm-12">
+          <h5>Your Key Image</h5>
+
+          <div class="row">
+            <div class="col-sm-3 add-art-image-wrapper">
+              <div class="add-art-image-box-div">
+                <a href="#">
+                  <div class="add-art-image-box">
+                    <span>+</span>
+                  </div>
+                </a>
+                <p>Click + to upload an image. JPG, PNG, and TIFF accepted.</p>
+              </div>
+            </div>
+
+            <div class="col-sm-8 col-sm-offset-1">
+              <div class="row">
+                <div class="col-sm-5">
+                  <input type="text"  class="form-control" required>
+                  <label for="display-name-input">Your Display Name*</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-5">
+                  <input type="text"  class="form-control" required>
+                  <label for="display-name-input">Your Title* ex: Oil Painter</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-5">
+                  <input type="text"  class="form-control" required>
+                  <label for="display-name-input">Your Location*</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-8">
+                  <textarea rows="5"  class="form-control" required></textarea>
+                  <label for="display-name-input">Artists Statement*</label>
+                  <p>Share a breif statement about yourself and your artistic practice.</p>
+                </div>
+              </div>
+              <div class="row add-artwork-btn-row">
+                <div class="col-sm-4">
+                  <button class="btn-line-modal">Add Your CV<span>+</span></button>
+                  <p>Upload your Professional CV, pdf accepted.*</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Your Bio section -->
+
+      <!-- Artwork Sales, Non-seller -->
+      <div class="row">
+        <div class="col-sm-12">
+          <h4 class="layout-section-header">Artwork Sales and Earnings</h4>
+          <h5>Do you intend to sell your Artwork on Picturra?</h5>
+          <p>You must be You must be 18 years or older and live in the United States to sell your Artwork on Picturra.</p>
+
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="row">
+                <div class="col-sm-7">
+                  <div class="dropdown dropdown-btn-div">
+                    <button class="dropdown-btn dropdown-toggle" type="button" id="dropdown-category" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Select
+                        <span class="glyphicon glyphicon-chevron-down"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdown-category">
+                      <li><a href="#">Yes, I will sell my artwork on Picturra</a></li>
+                      <li><a href="#">No, I will not sell my artwork on Picturra</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-sm-5">
+                  <h6>Your Country</h6>
+                  <div class="dropdown dropdown-btn-div">
+                    <button class="dropdown-btn dropdown-toggle" type="button" id="dropdown-category" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Select
+                        <span class="glyphicon glyphicon-chevron-down"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdown-category">
+                      <li><a href="#">Test</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-sm-3 col-sm-offset-2">
+                  <h6>Your Date of Birth</h6>
+                  <input type="text"  class="form-control" required>
+                  <label for="display-name-input">MM/DD/YYYY</label>
+                </div>
+              </div>
+              <p>Although you may not currently sell Artwork on Picturra, you may continue to use Picturra as a portfolio resource. We are working to support international Artist sales in the future, and will let you know when international sales become available.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End artwork sales -->
+
+      <!-- Submit -->
+      <div class="row">
+        <div class="col-sm-12 text-right">
+          <p>By clicking Save, you confirm that you’ve read and agree to Picturra’s <a>Seller Terms and Conditions</a></p>
+          <button class="btn btn-default btn-lg-outline" data-toggle="modal" data-target="#order-submit-modal">Save and Finish</button>
+        </div>
+      </div>
+      <!-- End Submit -->
+
     </div>
+
+    <!-- Submit modal -->
+    <div class="modal fade" id="order-submit-modal" tabindex="-1" role="dialog" aria-labelledby="order-submit-modal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-sm-12">
+                <h4 class="layout-section-header">Order Submitted</h4>
+                <div class="row">
+                  <div class="col-sm-5">
+                    <h5>Order Number</h5>
+                    <p>74647393</p>
+                  </div>
+                  <div class="col-sm-7">
+                    <p>Your order has been sent to the Artist or Artists, and an order confirmation email has been sent to jennfields@gmail.com</p><br>
+                    <a href="#">View + Track this Order</a>
+                    <br>
+                    <br>
+                    <button class="btn btn-outline">Purchases <span class="glyphicon glyphicon-chevron-right"></span></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--End Submit Modal -->
+
     <!-- End Page Content -->
 
     <!-- Sticky Footer -->

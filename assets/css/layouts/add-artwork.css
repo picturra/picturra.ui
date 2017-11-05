@@ -24,8 +24,9 @@
   padding-right: 0;
 }
 
-.add-artwork-wrapper > .row {
-  margin-bottom: 20px;
+.add-artwork-wrapper > .row,
+.add-artwork-wrapper > .row > * > .row {
+  margin-bottom: 50px;
 }
 
 .add-artwork-wrapper .layout-section-header {
