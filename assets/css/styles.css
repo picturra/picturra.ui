@@ -1,0 +1,13 @@
+/*Base files*/
+@import 'base/base.css';
+@import 'base/MyFontsWebfontsKit.css';
+
+/*Layouts*/
+@import 'layouts/lightbox-gallery.css';
+@import 'layouts/portfolio-main.css';
+@import 'layouts/add-artwork.css';
+@import 'layouts/cart.css';
+
+/*Components*/
+@import 'components/portfolio-gallery.css';
+@import 'components/navbar-footer.css';
