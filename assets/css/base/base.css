@@ -21,6 +21,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 a, a:hover {
+  font-family: NeuzeitGro-Bol !important;
   color: inherit;
 }
 
@@ -115,9 +116,12 @@ label {
 .btn {
   border-radius: 0;
   border: 0;
+}
+
+.btn-default {
+  color: #ffffff;
   background-color: #000;
   font-family: NeuzeitGro-Bol;
-  color: #ffffff !important;
 }
 
 .btn:hover {
@@ -127,6 +131,30 @@ label {
 .btn.active, .btn:focus, .btn:active {
   box-shadow: none !important;
   outline: none !important;
+}
+
+.btn-outline {
+  color: #000;
+  background-color: #fff;
+  border: solid 3px #000;
+}
+
+.btn-lg-outline:hover,
+.btn-outline:hover {
+  color: #fff;
+  border-color: #000;
+}
+
+.btn-lg-outline {
+  font-size: 20px;
+  color: #000;
+  background-color: #fff;
+  border: solid 3px #000;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 55px;
+  padding-right: 55px;
+  margin-top: 30px;
 }
 
 .btn-no-box {
@@ -168,9 +196,14 @@ label {
   padding: 0;
 }
 
+.dropdown-scroll {
+  max-height: 300px;
+  overflow-y: scroll;
+}
+
 .dropdown-btn-div{
   background: #fff;
-  border-bottom: solid 2px #000;
+  border-bottom: solid 1px #000;
   width: 100%;
 }
 

@@ -84,6 +84,10 @@
   font-size: 18px;
 }
 
+.btn-lg-outline {
+  margin-top: 0;
+}
+
 @media (max-width: 767px) {
   .cart-header-row h5 {
     display: none;
