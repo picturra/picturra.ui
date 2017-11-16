@@ -2,7 +2,11 @@
 @import 'base/base.css';
 @import 'base/MyFontsWebfontsKit.css';
 
-/*Components*/
-@import 'components/navbar-footer.css';
+/*Layouts*/
+@import 'layouts/lightbox-gallery.css';
 @import 'layouts/portfolio-main.css';
-@import 'components/portfolio-gallery.css'
+@import 'layouts/add-artwork.css';
+
+/*Components*/
+@import 'components/portfolio-gallery.css';
+@import 'components/navbar-footer.css';
