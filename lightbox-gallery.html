@@ -38,12 +38,34 @@
           <ul class="nav navbar-nav">
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu<span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Menu 1</a></li>
+            <ul class="dropdown-menu artist-menu">
+              <ul class="dropdown-lists">
+                <li><a href="#">View My Portfolio</a></li>
+                <li><a href="#">Manage My Portfolio</a></li>
+                <li><a href="#">Manage Orders</a></li>
+                <li><a href="#">Messages</a></li>
+              </ul>
+
               <li role="separator" class="divider"></li>
-              <li><a href="#">Menu 2</a></li>
+              <ul class="dropdown-lists">
+                <li><a href="#">Cart</a></li>
+                <li><a href="#">Purchases</a></li>
+                <li><a href="#">Favorites</a></li>
+              </ul>
+
               <li role="separator" class="divider"></li>
-              <li><a href="#">Menu 3</a></li>
+              <div class="row">
+                <div class="col-sm-4">
+                  <img src="./assets/images/Profile-pic.JPG" alt="Profile Picture" class="img-responsive menu-profile-pic">
+                </div>
+                <div class="col-sm-6 menu-artist-div">
+                  <ul class="menu-artist-list">
+                    <li><a href="#"><span class="menu-bold">Leslie Johnson</span></a></li>
+                    <li><a href="#">Account Settings</a></li>
+                    <li><a href="#">Sign Out</a></li>
+                  </ul>
+                </div>
+              </div>
             </ul>
           </li>
         </ul>
@@ -162,22 +184,76 @@
             <div class="row">
               <div class="col-sm-10 col-sm-offset-2">
                 <div class="review-wrapper">
-                <div class="row">
-                  <div class="col-sm-3">
-                    <span class="rating">+ + + + +</span>
-                    <div class="review-div-summary">
-                      <img class="img-responsive" src="./assets/images/Profile-pic.JPG" alt="Profile picture">
-                      <div>
-                        <h5>Jasper Johns</h5>
-                        <p>7 days ago</p>
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <span class="rating">+ + + + +</span>
+                      <div class="review-div-summary">
+                        <img class="img-responsive" src="./assets/images/Profile-pic.JPG" alt="Profile picture">
+                        <div>
+                          <h5>Jasper Johns</h5>
+                          <p>7 days ago</p>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="col-sm-9 review-div-text">
-                    <h5>Review Title</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                    <div class="col-sm-9 review-div-text">
+                      <h5>Review Title</h5>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                    </div>
                   </div>
                 </div>
+                <div class="review-wrapper">
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <span class="rating">+ + + + +</span>
+                      <div class="review-div-summary">
+                        <img class="img-responsive" src="./assets/images/Profile-pic.JPG" alt="Profile picture">
+                        <div>
+                          <h5>Jasper Johns</h5>
+                          <p>7 days ago</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-9 review-div-text">
+                      <h5>Review Title</h5>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="review-wrapper">
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <span class="rating">+ + + + +</span>
+                      <div class="review-div-summary">
+                        <img class="img-responsive" src="./assets/images/Profile-pic.JPG" alt="Profile picture">
+                        <div>
+                          <h5>Jasper Johns</h5>
+                          <p>7 days ago</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-9 review-div-text">
+                      <h5>Review Title</h5>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="review-wrapper">
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <span class="rating">+ + + + +</span>
+                      <div class="review-div-summary">
+                        <img class="img-responsive" src="./assets/images/Profile-pic.JPG" alt="Profile picture">
+                        <div>
+                          <h5>Jasper Johns</h5>
+                          <p>7 days ago</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-9 review-div-text">
+                      <h5>Review Title</h5>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -249,15 +325,40 @@
     </div>
     <!-- End Report Success Modal -->
 
+    <!-- Message Modal -->
+    <div class="modal fade" id="message-modal" tabindex="-1" role="dialog" aria-labelledby="edit-bio-modal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-sm-12">
+                <h4 class="layout-section-header">Message Brad Johnson</h4>
+                <div class="form-group">
+                  <textarea class="form-control" rows="10" id="comment" placeholder="Type a message..."></textarea>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12 modal-btn-wrapper">
+                    <button class="cancel-btn pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-chevron-left"></span> Cancel</button>
+                    <button class="btn btn-outline pull-right">Send</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Message Modal -->
+
     </div>
     <!-- End Content -->
 
     <!-- Side buttons -->
     <div class="side-btn-wrapper">
-      <button id="btn side-btn"><span id="side-favorite-btn-icon">	&#43;</span><span class="side-btn-text">Favorite<span></span></button>
-      <button id="btn side-btn"><span id="side-message-btn-icon">	&#43;</span><span class="side-btn-text">Message<span></span></button>
-      <button id="btn side-btn" data-toggle="modal" data-target="#report-modal"><span id="side-report-btn-icon">	&#43;</span><span class="side-btn-text">Report<span></span></button>
-      <button id="btn side-btn"><span id="side-follow-btn-icon">	&#43;</span><span class="side-btn-text">Follow<span></span></button>
+      <button class="btn side-btn"><span id="side-favorite-btn-icon" class="glyphicon glyphicon-heart"></span><span class="side-btn-text">Favorite<span></span></button>
+      <button class="btn side-btn" data-toggle="modal" data-target="#message-modal"><span id="side-message-btn-icon" class="glyphicon glyphicon-envelope"></span><span class="side-btn-text">Message<span></span></button>
+      <button class="btn side-btn" data-toggle="modal" data-target="#report-modal"><span id="side-report-btn-icon" class="glyphicon glyphicon-flag"></span><span class="side-btn-text">Report<span></span></button>
+      <button class="btn side-btn"><span id="side-follow-btn-icon">	&#43;</span><span class="side-btn-text">Follow<span></span></button>
     </div>
 
 <!-- Sticky Footer -->
