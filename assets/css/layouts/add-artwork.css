@@ -9,7 +9,9 @@
 
 .add-artwork-wrapper input + label,
 .dropdown + p,
-.input-group + p {
+.input-group + p,
+.input-group + label,
+.dropdown + label {
   position: relative;
   top: -15px;
 }
@@ -18,7 +20,11 @@
   top:0;
 }
 
-.add-artwork-wrapper .row {
+.add-artwork-wrapper input + .input-group-addon {
+  padding-right: 0;
+}
+
+.add-artwork-wrapper > .row {
   margin-bottom: 20px;
 }
 
@@ -75,10 +81,10 @@
   color: #fff !important;
 }
 
-.btn-shipping-modal {
+.btn-line-modal {
   width: 100%;
   border: 0;
-  border-bottom: solid 2px #000;
+  border-bottom: solid 1px #000;
   display: flex;
   justify-content: space-between;
   background-color: #fff;
@@ -86,7 +92,7 @@
   padding: 0;
 }
 
-.btn-shipping-modal>span {
+.btn-line-modal>span {
   font-weight:bold;
   font-size: 18px;
 }
@@ -109,6 +115,10 @@
 
 .shipping-list-row:hover {
   font-weight: bold;
+}
+
+.add-artwork-btn-row {
+  margin-top: 30px;
 }
 
 @media (max-width: 768px) {
