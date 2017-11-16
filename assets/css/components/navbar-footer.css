@@ -28,7 +28,7 @@ body {
   border-bottom-width: 3px;
   margin-left: 5px;
   margin-right: 5px;
-  z-index: 20000;
+  z-index: 1040;
 }
 
 .navbar-brand-image {
@@ -55,7 +55,7 @@ body {
 .search-input {
   border-style: solid;
   border-width: 1px;
-  border-color: transparent;
+  border-color: transparent !important;
   box-shadow: none;
   background: none;
 }
@@ -76,23 +76,28 @@ span.glyphicon.glyphicon-chevron-down {
 }
 
 /*Nav Dropdown*/
-.dropdown-menu {
+
+nav .dropdown {
+  margin-bottom: 0;
+}
+
+nav .dropdown-menu {
   background: #000000;
   border-radius: 0;
 }
 
-.dropdown-lists>li>a,
-.menu-artist-list>li>a {
+nav .dropdown-lists>li>a,
+nav .menu-artist-list>li>a {
   color: #ffffff;
   padding-bottom: 15px;
   display: block;
 }
 
-.dropdown-lists>li:last-of-type {
+nav .dropdown-lists>li:last-of-type {
   border-bottom: none;
 }
 
-.dropdown-lists>li {
+nav .dropdown-lists>li {
   border-bottom-style: solid;
   border-bottom-width: 1px;
   border-bottom-color: #ffffff;
@@ -102,7 +107,7 @@ span.glyphicon.glyphicon-chevron-down {
   margin-bottom: 0;
 }
 
-.dropdown-menu .divider {
+nav .dropdown-menu .divider {
   background-color: #ffffff;
   padding: 0;
   margin: 0;
@@ -114,13 +119,13 @@ span.glyphicon.glyphicon-chevron-down {
   color: #000000;
 }
 
-.dropdown.open>.dropdown-toggle {
+nav .dropdown.open>.dropdown-toggle {
   color: #ffffff !important;
   background-color: #000000 !important;
 }
 
-.dropdown-lists li a:focus,
-.dropdown-lists li a:hover {
+nav .dropdown-lists li a:focus,
+nav .dropdown-lists li a:hover {
   background: transparent;
   color: #ffffff;
   text-decoration: underline;
@@ -187,33 +192,42 @@ span.glyphicon.glyphicon-chevron-down {
     padding-bottom: 15px;
   }
 
+  nav .menu-artist-list>li>a {
+    padding: 10px;
+  }
+
   .navbar-default .navbar-nav .open .dropdown-lists>li>a,
   .navbar-default .navbar-nav .open .dropdown-lists>li>a:hover,
   .menu-artist-list>li>a {
-    color: #000000;
+    color: #fff;
   }
 
-  .dropdown-toggle {
+  nav .dropdown-toggle {
     position: fixed !important;
     top: 0;
     right: -10px;
   }
 
-  .dropdown-menu {
+  nav .dropdown.open {
+    background-color: #000;
+    color: #fff;
+  }
+
+  nav .dropdown-menu {
     margin-top: 50px !important;
   }
 
-  .dropdown-lists>li {
+  nav .dropdown-lists>li {
     margin-top: 0;
   }
 
-  .dropdown-lists>li>a,
+  nav .dropdown-lists>li>a,
   .menu-artist-list>li>a {
-    padding: 5px;
+    padding: 10px;
   }
 
-  .dropdown-menu .divider {
-    background-color: #000000;
+  nav .dropdown-menu .divider {
+    background-color: #fff;
     height: 1px;
   }
 
@@ -223,7 +237,6 @@ span.glyphicon.glyphicon-chevron-down {
 
   .menu-artist-div {
     margin-left: 30px;
-    margin-top: 10px;
   }
 
 }
