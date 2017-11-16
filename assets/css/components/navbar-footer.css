@@ -28,7 +28,7 @@ body {
   border-bottom-width: 3px;
   margin-left: 5px;
   margin-right: 5px;
-  z-index: 20000;
+  z-index: 1040;
 }
 
 .navbar-brand-image {
@@ -55,7 +55,7 @@ body {
 .search-input {
   border-style: solid;
   border-width: 1px;
-  border-color: transparent;
+  border-color: transparent !important;
   box-shadow: none;
   background: none;
 }
@@ -76,17 +76,42 @@ span.glyphicon.glyphicon-chevron-down {
 }
 
 /*Nav Dropdown*/
-.dropdown-menu {
+
+nav .dropdown {
+  margin-bottom: 0;
+}
+
+nav .dropdown-menu {
   background: #000000;
   border-radius: 0;
 }
 
-.dropdown-menu>li>a {
+nav .dropdown-lists>li>a,
+nav .menu-artist-list>li>a {
   color: #ffffff;
+  padding-bottom: 15px;
+  display: block;
 }
 
-.dropdown-menu .divider {
+nav .dropdown-lists>li:last-of-type {
+  border-bottom: none;
+}
+
+nav .dropdown-lists>li {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #ffffff;
+  margin-left:30px;
+  margin-right: 40px;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+nav .dropdown-menu .divider {
   background-color: #ffffff;
+  padding: 0;
+  margin: 0;
+  height: 3px;
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -94,14 +119,35 @@ span.glyphicon.glyphicon-chevron-down {
   color: #000000;
 }
 
-.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
-  background: #000000;
-  color: #ffffff;
+nav .dropdown.open>.dropdown-toggle {
+  color: #ffffff !important;
+  background-color: #000000 !important;
 }
 
-.dropdown-menu>li>a:hover {
-  background: #000000;
+nav .dropdown-lists li a:focus,
+nav .dropdown-lists li a:hover {
+  background: transparent;
   color: #ffffff;
+  text-decoration: underline;
+}
+
+/*Artist View Menu*/
+.artist-menu {
+  width: 400px;
+}
+
+.menu-bold {
+  font-family: NeuzeitGro-Bol;
+}
+
+.menu-profile-pic {
+  width: 110px;
+  height: 110px;
+  margin: 15px;
+}
+
+.menu-artist-div {
+  margin-top: 15px;
 }
 
 /*==============*/
@@ -118,7 +164,14 @@ span.glyphicon.glyphicon-chevron-down {
 
 /*=======================*/
 /*Media Queries*/
-@media (max-width: 768px) {
+@media (max-width: 991px) {
+  /*Footer collapse*/
+  .footer ul {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
   /*Navbar collapse*/
   .navbar-nav {
     margin: 0 -15px 0 -15px;
@@ -139,18 +192,51 @@ span.glyphicon.glyphicon-chevron-down {
     padding-bottom: 15px;
   }
 
-  .navbar-default .navbar-nav .open .dropdown-menu>li>a, .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
-    color: #000000;
+  nav .menu-artist-list>li>a {
+    padding: 10px;
   }
 
-  .dropdown-menu .divider {
-    background-color: #000000;
+  .navbar-default .navbar-nav .open .dropdown-lists>li>a,
+  .navbar-default .navbar-nav .open .dropdown-lists>li>a:hover,
+  .menu-artist-list>li>a {
+    color: #fff;
   }
-}
 
-@media (min-width: 0px) and (max-width: 992px) {
-  /*Footer collapse*/
-  .footer ul {
+  nav .dropdown-toggle {
+    position: fixed !important;
+    top: 0;
+    right: -10px;
+  }
+
+  nav .dropdown.open {
+    background-color: #000;
+    color: #fff;
+  }
+
+  nav .dropdown-menu {
+    margin-top: 50px !important;
+  }
+
+  nav .dropdown-lists>li {
+    margin-top: 0;
+  }
+
+  nav .dropdown-lists>li>a,
+  .menu-artist-list>li>a {
+    padding: 10px;
+  }
+
+  nav .dropdown-menu .divider {
+    background-color: #fff;
+    height: 1px;
+  }
+
+  .menu-profile-pic {
     display: none;
   }
+
+  .menu-artist-div {
+    margin-left: 30px;
+  }
+
 }
