@@ -116,9 +116,6 @@ label {
 .btn {
   border-radius: 0;
   border: 0;
-}
-
-.btn-default {
   color: #ffffff;
   background-color: #000;
   font-family: NeuzeitGro-Bol;
@@ -126,11 +123,23 @@ label {
 
 .btn:hover {
   background-color: #000000;
+  color: #fff;
 }
 
 .btn.active, .btn:focus, .btn:active {
   box-shadow: none !important;
   outline: none !important;
+}
+
+.btn-lg-black {
+  font-family: NeuzeitGro-Bol;
+  font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 55px;
+  padding-right: 55px;
+  margin-top: 30px;
+  background-color: #000000;
 }
 
 .btn-outline {
