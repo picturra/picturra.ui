@@ -55,10 +55,10 @@
 
               <li role="separator" class="divider"></li>
               <div class="row">
-                <div class="col-sm-4">
+                <div class="col-md-4">
                   <img src="./assets/images/Profile-pic.JPG" alt="Profile Picture" class="img-responsive menu-profile-pic">
                 </div>
-                <div class="col-sm-6 menu-artist-div">
+                <div class="col-md-6 menu-artist-div">
                   <ul class="menu-artist-list">
                     <li><a href="#"><span class="menu-bold">Leslie Johnson</span></a></li>
                     <li><a href="#">Account Settings</a></li>
@@ -75,98 +75,175 @@
   <!-- Begin page content -->
     <!-- Sidebar -->
     <div class="container-fluid messages-wrapper">
-      <div class="col-xs-4 message-sidebar">
-        <form>
-          <div class="form-group has-feedback search-box">
-            <input type="text" class="form-control search-input" placeholder="Search">
-            <span class="glyphicon glyphicon-search form-control-feedback"></span>
-          </div>
-        </form>
-        <a class="inbox-div">
-          <div class="col-xs-12">
-            <img src="./assets/images/Profile-pic.JPG" alt="" class="img-responsive">
-            <div>
-              <h5>Brad Johnson</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur</p>
-              <span class="time">5:50pm</span>
+      <div class="row">
+        <div class="col-md-4 message-sidebar">
+          <div class="row">
+            <div class="col-md-12">
+              <form>
+                <div class="form-group has-feedback search-box">
+                  <input type="text" class="form-control search-input" placeholder="Search">
+                  <span class="glyphicon glyphicon-search form-control-feedback"></span>
+                </div>
+              </form>
             </div>
           </div>
-        </a>
-        <a class="inbox-div">
-          <div class="col-xs-12">
-            <img src="./assets/images/Profile-pic.JPG" alt="" class="img-responsive">
-            <div>
-              <h5>Brad Johnson</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur</p>
-              <span class="time">5:50pm</span>
+
+          <div class="row">
+            <div class="col-md-12 inbox-div">
+              <a>
+                <img src="./assets/images/Profile-pic.JPG" alt="" class="img-responsive">
+                <div class="message-details">
+                  <div class="name-and-title">
+                    <h5>Brad Johnson</h5>
+                    <span>5:50pm</span>
+                  </div>
+                  <p class="unread">Lorem ipsum dolor sit amet, consectetur</p>
+                </div>
+              </a>
             </div>
           </div>
-        </a>
-        <a class="inbox-div">
-          <div class="col-xs-12">
-            <img src="./assets/images/Profile-pic.JPG" alt="" class="img-responsive">
-            <div>
-              <h5>Brad Johnson</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur</p>
-              <span class="time">5:50pm</span>
+
+          <div class="row">
+            <div class="col-md-12 inbox-div">
+              <a>
+                <img src="./assets/images/Profile-pic.JPG" alt="" class="img-responsive">
+                <div class="message-details">
+                  <div class="name-and-title">
+                    <h5>Brad Johnson</h5>
+                    <span>5:50pm</span>
+                  </div>
+                  <p>Lorem ipsum dolor sit amet, consectetur</p>
+                </div>
+              </a>
             </div>
           </div>
-        </a>
-        <a class="inbox-div">
-          <div class="col-xs-12">
-            <img src="./assets/images/Profile-pic.JPG" alt="" class="img-responsive">
-            <div>
-              <h5>Brad Johnson</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur</p>
-              <span class="time">5:50pm</span>
+
+          <div class="row">
+            <div class="col-md-12 inbox-div">
+              <a>
+                <img src="./assets/images/Profile-pic.JPG" alt="" class="img-responsive">
+                <div class="message-details">
+                  <div class="name-and-title">
+                    <h5>Brad Johnson</h5>
+                    <span>5:50pm</span>
+                  </div>
+                  <p>Lorem ipsum dolor sit amet, consectetur</p>
+                </div>
+              </a>
             </div>
           </div>
-        </a>
-      </div>
+
+          <div class="row">
+            <div class="col-md-12 inbox-div">
+              <a>
+                <img src="./assets/images/Profile-pic.JPG" alt="" class="img-responsive">
+                <div class="message-details">
+                  <div class="name-and-title">
+                    <h5>Brad Johnson</h5>
+                    <span>5:50pm</span>
+                  </div>
+                  <p>Lorem ipsum dolor sit amet, consectetur</p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12 inbox-div">
+              <a>
+                <img src="./assets/images/Profile-pic.JPG" alt="" class="img-responsive">
+                <div class="message-details">
+                  <div class="name-and-title">
+                    <h5>Brad Johnson</h5>
+                    <span>5:50pm</span>
+                  </div>
+                  <p>Lorem ipsum dolor sit amet, consectetur</p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+        </div>
 
       <!-- Main Messages section -->
-      <div class="col-xs-8 messages-main">
-        <div>
-          <h4>Brad Johnson</h4>
-          <p>Collector from Chicago</p>
-        </div>
-        <div class="row">
-          <div class="col-xs-7 message-content-wrapper">
-            <h7>Monday at 3:30pm</h7>
-            <div class="message-content-div">
-              <img src="./assets/images/Profile-pic.JPG" alt="" class="img-responsive">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed tortor condimentum, commodo orci vel, fringilla neque. Proin malesuada nisl.</p>
+      <div class="messages-main-wrapper">
+        <button type="button" class="close" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <div class="col-md-8 messages-main">
+          <div class="user-header">
+            <img src="./assets/images/Profile-pic.JPG" alt="" class="img-responsive">
+            <div>
+              <h4>Brad Johnson</h4>
+              <p>Collector from Chicago</p>
             </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-7 message-content-wrapper pull-right">
-            <h7>Monday at 3:30pm</h7>
-            <div class="message-content-div">
-              <img src="./assets/images/Profile-pic.JPG" alt="" class="img-responsive">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed tortor condimentum, commodo orci vel, fringilla neque. Proin malesuada nisl.</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-7 message-content-wrapper">
-            <h7>Monday at 3:30pm</h7>
-            <div class="message-content-div">
-              <img src="./assets/images/Profile-pic.JPG" alt="" class="img-responsive">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed tortor condimentum, commodo orci vel, fringilla neque. Proin malesuada nisl.</p>
-            </div>
-          </div>
-        </div>
 
-        <div class="row">
-          <div class="col-xs-12 message-text-input-div">
-            <span>Type a message...</span>
-            <button class="btn btn-default">Send</button>
+          <div class="row">
+            <div class="col-md-12 message-content-wrapper">
+              <h7>Received Monday at 3:30pm</h7>
+              <div class="message-content-div">
+                <img src="./assets/images/Profile-pic.JPG" alt="" class="img-responsive">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed tortor condimentum, commodo orci vel, fringilla neque. Proin malesuada nisl.</p>
+              </div>
+            </div>
           </div>
-        </div>
+
+          <div class="row">
+            <div class="col-md-12 message-content-wrapper">
+              <h7>Received Monday at 3:30pm</h7>
+              <div class="message-content-div">
+                <img src="./assets/images/Profile-pic.JPG" alt="" class="img-responsive">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed tortor condimentum, commodo orci vel, fringilla neque. Proin malesuada nisl.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12 message-content-wrapper">
+              <h7>Received Monday at 3:30pm</h7>
+              <div class="message-content-div">
+                <img src="./assets/images/Profile-pic.JPG" alt="" class="img-responsive">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed tortor condimentum, commodo orci vel, fringilla neque. Proin malesuada nisl.</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="row">
+            <div class="col-md-12 message-text-input-div">
+              <button class="btn btn-outline pull-right" data-toggle="modal" data-target="#message-modal">New Message</button>
+            </div>
+          </div>
+          </div>
         </div>
       </div>
     </div>
+
+    <!-- Message Modal -->
+    <div class="modal fade" id="message-modal" tabindex="-1" role="dialog" aria-labelledby="edit-bio-modal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-sm-12">
+                <h4 class="layout-section-header">Message Brad Johnson</h4>
+                <div class="form-group">
+                  <textarea class="form-control" rows="10" id="comment" placeholder="Type a message..."></textarea>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12 modal-btn-wrapper">
+                    <button class="cancel-btn pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-chevron-left"></span> Cancel</button>
+                    <button class="btn btn-outline pull-right">Send</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Message Modal -->
 
 
     <!-- Sticky Footer -->
@@ -212,7 +289,7 @@
     <!-- jQueryUI touch with Touch Punch -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!-- Isotope JS for gallery layout and sorting -->
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
     <script src="./assets/js/isotope-gallery.js"></script>
