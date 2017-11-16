@@ -90,7 +90,7 @@
                   <div class="bio-management-right-div">
                     <span class="profile-category">Portraits in Oils</span>
                     <span class="profile-location"><span class="glyphicon glyphicon-map-marker"></span>Portland, Oregon</span>
-                    <button class="btn btn-default">Edit Bio</button>
+                    <button class="btn btn-default" data-toggle="modal" data-target="#edit-bio-modal">Edit Bio</button>
                   </div>
                 </div>
               </div>
@@ -166,7 +166,7 @@
             <h4 class="layout-section-header">Artwork</h4>
             <div class="row">
               <div class="col-xs-12">
-                <button class="btn btn-default">&#43; Add Artwork</button>
+                <button class="btn btn-default">&#43; Add</button>
                 <button class="btn btn-default" data-toggle="modal" data-target="#artwork-sort-modal">Sort</button>
               </div>
             </div>
@@ -257,69 +257,139 @@
       </div>
     </div>
 
+    <!-- Edit Bio modal -->
+    <div class="modal fade" id="edit-bio-modal" tabindex="-1" role="dialog" aria-labelledby="edit-bio-modal">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-sm-4">
+                <h4 class="layout-section-header">Your Display Photo</h4>
+                <img class="img-responsive" src="./assets/images/Profile-pic.JPG" alt="Profile Picture">
+                <button class="btn-no-box">Remove</button>
+              </div>
+              <div class="col-sm-8">
+                <h4 class="layout-section-header">Your Artist Bio</h4>
+                <div class="row">
+                  <div class="col-xs-8">
+                    <div class="input-group">
+                      <input type="text" id="display-name-input" class="form-control" placeholder="Jenn Baker" aria-label="Your Display Name">
+                      <label for="display-name-input">Your Display Name</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-8">
+                    <div class="input-group">
+                      <input type="text" id="title-input" class="form-control" placeholder="Jenn Baker" aria-label="Your Title">
+                      <label for="title-input">Your Title*</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-8">
+                    <div class="input-group">
+                      <input type="text" id="location-input" class="form-control" placeholder="Jenn Baker" aria-label="Your Location">
+                      <label for="location-input">Your Location*</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12">
+                    <div class="input-group">
+                      <textarea maxlength="500" rows="5" id="artist-statement-input" class="form-control" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat" aria-label="Artist Statement"></textarea>
+                      <label for="artist-statement-input">Artist Statement*</label>
+                      <p>Share a brief statement about yourself and your work. 500 character limit.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-8">
+                    <div class="input-group">
+                      <input type="text" id="location-input" class="form-control" placeholder="Jenn Baker" aria-label="Your Location">
+                      <label for="cv-input">Your C.V.</label>
+                      <p>Upload your professional C.V. pdf, jpg, and doc formats supported.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12 modal-btn-wrapper">
+                    <button class="cancel-btn pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-chevron-left"></span> Cancel</button>
+                    <button class="btn btn-default pull-right">Save</button>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Edit Bio Modal -->
+
     <!-- Artwork sort modal -->
       <div class="modal fade" id="artwork-sort-modal" tabindex="-1" role="dialog" aria-labelledby="artwork-sort-modal">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-body">
-                        <h4 class="layout-section-header">Sort Artwork</h4>
-                        <div class="row">
-                          <div class="col-xs-12">
-                            <p>Add Artwork to the Collections or click and drag the arrows to reorder.</p>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-xs-12" id="artwork-sortable">
-                            <ul class="artwork-list-wrapper artwork-sort">
-                              <li>01</li>
-                              <li><img src="./assets/images/painting1.JPG" alt="" class="artwork-thumb img-responsive"></li>
-                              <li>White Church</li>
-                              <li>Oil Paintings</li>
-                            </ul>
-                            <ul class="artwork-list-wrapper artwork-sort">
-                              <li>02</li>
-                              <li><img src="./assets/images/painting2.JPG" alt="" class="artwork-thumb img-responsive"></li>
-                              <li>White Church</li>
-                              <li>Oil Paintings</li>
-                            </ul>
-                            <ul class="artwork-list-wrapper artwork-sort">
-                              <li>03</li>
-                              <li><img src="./assets/images/painting3.JPG" alt="" class="artwork-thumb img-responsive"></li>
-                              <li>White Church</li>
-                              <li>Oil Paintings</li>
-                            </ul>
-                            <ul class="artwork-list-wrapper artwork-sort">
-                              <li>04</li>
-                              <li><img src="./assets/images/painting4.JPG" alt="" class="artwork-thumb img-responsive"></li>
-                              <li>White Church</li>
-                              <li>Oil Paintings</li>
-                            </ul>
-                            <ul class="artwork-list-wrapper artwork-sort">
-                              <li>05</li>
-                              <li><img src="./assets/images/painting5.JPG" alt="" class="artwork-thumb img-responsive"></li>
-                              <li>White Church</li>
-                              <li>Oil Paintings</li>
-                            </ul>
-                            <ul class="artwork-list-wrapper artwork-sort">
-                              <li>06</li>
-                              <li><img src="./assets/images/painting6.JPG" alt="" class="artwork-thumb img-responsive"></li>
-                              <li>White Church</li>
-                              <li>Oil Paintings</li>
-                            </ul>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-xs-12 artwork-sort-btns">
-                            <a href="#" data-dismiss="modal"><span class="glyphicon glyphicon-chevron-left"></span> Cancel</a>
-                            <button class="btn btn-default">Save</button>
-                          </div>
-                        </div>
-
-                      </div>
-                    </div>
-                  </div>
+              <h4 class="layout-section-header">Sort Artwork</h4>
+              <div class="row">
+                <div class="col-xs-12">
+                  <p>Add Artwork to the Collections or click and drag the arrows to reorder.</p>
                 </div>
-                <!-- End Artwork Modal -->
+              </div>
+              <div class="row">
+                <div class="col-xs-12" id="artwork-sortable">
+                  <ul class="artwork-list-wrapper artwork-sort">
+                    <li>01</li>
+                    <li><img src="./assets/images/painting1.JPG" alt="" class="artwork-thumb img-responsive"></li>
+                    <li>White Church</li>
+                    <li>Oil Paintings</li>
+                  </ul>
+                  <ul class="artwork-list-wrapper artwork-sort">
+                    <li>02</li>
+                    <li><img src="./assets/images/painting2.JPG" alt="" class="artwork-thumb img-responsive"></li>
+                    <li>White Church</li>
+                    <li>Oil Paintings</li>
+                  </ul>
+                  <ul class="artwork-list-wrapper artwork-sort">
+                    <li>03</li>
+                    <li><img src="./assets/images/painting3.JPG" alt="" class="artwork-thumb img-responsive"></li>
+                    <li>White Church</li>
+                    <li>Oil Paintings</li>
+                  </ul>
+                  <ul class="artwork-list-wrapper artwork-sort">
+                    <li>04</li>
+                    <li><img src="./assets/images/painting4.JPG" alt="" class="artwork-thumb img-responsive"></li>
+                    <li>White Church</li>
+                    <li>Oil Paintings</li>
+                  </ul>
+                  <ul class="artwork-list-wrapper artwork-sort">
+                    <li>05</li>
+                    <li><img src="./assets/images/painting5.JPG" alt="" class="artwork-thumb img-responsive"></li>
+                    <li>White Church</li>
+                    <li>Oil Paintings</li>
+                  </ul>
+                  <ul class="artwork-list-wrapper artwork-sort">
+                    <li>06</li>
+                    <li><img src="./assets/images/painting6.JPG" alt="" class="artwork-thumb img-responsive"></li>
+                    <li>White Church</li>
+                    <li>Oil Paintings</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12 modal-btn-wrapper">
+                  <button class="cancel-btn pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-chevron-left"></span> Cancel</button>
+                  <button class="btn btn-default pull-right">Save</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+                <!-- End Artwork Sort Modal -->
 
                 <!-- Collections sort modal -->
                   <div class="modal fade" id="collections-sort-modal" tabindex="-1" role="dialog" aria-labelledby="collections-sort-modal">
@@ -354,9 +424,9 @@
                             </div>
                           </div>
                           <div class="row">
-                            <div class="col-xs-12 artwork-sort-btns">
-                              <a href="#" data-dismiss="modal"><span class="glyphicon glyphicon-chevron-left"></span> Cancel</a>
-                              <button class="btn btn-default">Save</button>
+                            <div class="col-xs-12 modal-btn-wrapper">
+                              <button class="cancel-btn pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-chevron-left"></span> Cancel</button>
+                              <button class="btn btn-default pull-right">Save</button>
                             </div>
                           </div>
 
@@ -365,6 +435,51 @@
                     </div>
                   </div>
                   <!-- End collections sort modal -->
+
+                  <!-- Collections remove confirm modal -->
+                    <div class="modal fade" id="collections-remove-modal" tabindex="-1" role="dialog" aria-labelledby="collections-remove-modal">
+                      <div class="modal-dialog modal-sm" role="document">
+                        <div class="modal-content">
+                          <div class="modal-body">
+                            <h4 class="layout-section-header">Remove Collection</h4>
+                            <div class="row">
+                              <div class="col-xs-12">
+                                <p>Add Collections or click and drag the arrows to reorder.</p>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-xs-12" id="collections-sortable">
+                                <ul class="collections-list collections-sort">
+                                  <li>01</li>
+                                  <li>Oil Paintings</li>
+                                </ul>
+                                <ul class="collections-list collections-sort">
+                                  <li>02</li>
+                                  <li>Photographs</li>
+                                </ul>
+                                <ul class="collections-list collections-sort">
+                                  <li>03</li>
+                                  <li>Landscapes</li>
+                                </ul>
+                                <ul class="collections-list collections-sort">
+                                  <li>04</li>
+                                  <li>Portraits</li>
+                                </ul>
+
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-xs-12 modal-btn-wrapper">
+                                <button class="cancel-btn pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-chevron-left"></span> Cancel</button>
+                                <button class="btn btn-default pull-right">Save</button>
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End collections sort modal -->
 
               </div>
             </div>
