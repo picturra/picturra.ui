@@ -21,6 +21,7 @@
 .bio-management-right-div {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   margin-left: 40px;
 }
 

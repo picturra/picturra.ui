@@ -23,6 +23,7 @@ h1,h2,h3,h4,h5,h6 {
 a, a:hover {
   font-family: NeuzeitGro-Bol !important;
   color: inherit;
+  cursor: pointer;
 }
 
 ul {
@@ -133,6 +134,8 @@ label {
 .btn.active, .btn:focus, .btn:active {
   box-shadow: none !important;
   outline: none !important;
+  background-color: #000;
+  color: #fff;
 }
 
 .btn-lg-black {
@@ -177,6 +180,12 @@ label {
   border-bottom-style: solid;
   border-bottom-width: 1px;
   border-bottom-color: #000;
+}
+
+.header-btn {
+  position: relative;
+  font-size: 12px;
+  padding: 3px 15px;
 }
 
 .cancel-btn {
@@ -248,6 +257,14 @@ label {
 }
 
 /*Modals*/
+.modal-header {
+  border-bottom: 0;
+}
+
+.modal-footer {
+  border: 0;
+}
+
 .modal-content {
   border-radius: 0;
 }
