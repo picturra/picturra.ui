@@ -55,6 +55,32 @@
   font-family: NeuzeitGro-Bol;
 }
 
+.follower-wrapper {
+  display: flex;
+  padding: 15px 0;
+  border-bottom: solid 1px #000;
+}
+
+.follower-wrapper:first-of-type {
+  margin-top: -30px;
+}
+
+.follower-wrapper img {
+  height: 50px;
+  margin-right: 20px;
+}
+
+.follower-wrapper h4,
+.follower-wrapper p {
+  margin: 0
+}
+
+.follower-wrapper > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
 @media(max-width: 992px) {
   .bio-stats-div {
     position: absolute;
@@ -66,5 +92,12 @@
 @media (max-width: 576px) {
   .profile-bio {
     margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  .profile-stats {
+    display: inline-block;
+    float: right;
   }
 }

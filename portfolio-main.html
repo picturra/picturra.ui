@@ -36,13 +36,15 @@
         </div>
         <div class="col-md-8 profile-bio-content">
           <div class="bio-stats-div">
-            <span class="profile-category">Portraits in Oils</span>
+            <div>
+              <span class="profile-category">Portraits in Oils</span>
+              <ul class="list-inline profile-stats">
+                <li><a data-toggle="modal" data-target="#followers-modal">1,210 Followers</a></li>
+                <li><a data-toggle="modal" data-target="#followers-modal">2108 Following</a></li>
+                <li><strong>87 Pieces Sold</strong></li>
+              </ul>
+            </div>
             <span class="profile-location"><span class="glyphicon glyphicon-map-marker"></span>Portland, Oregon</span>
-            <ul class="list-inline profile-stats">
-              <li>1,210 Followers</li>
-              <li>2108 Following</li>
-              <li>87 Pieces Sold</li>
-            </ul>
           </div>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean luctus, justo vel scelerisque bibendum, massa orci
 gravida lacus, eu ultrices mi purus pulvinar erat. Quisque tortor ante viverra fusce. Lorem ipsum dolor sit amet,
@@ -314,18 +316,76 @@ purus pulvinar erat. Quisque tortor ante viverra.</p>
     </div>
 
     <!-- Message Modal -->
-<div class="modal fade" id="message-modal" tabindex="-1" role="dialog" aria-labelledby="message-modal-label">
+    <div class="modal fade" id="message-modal" tabindex="-1" role="dialog" aria-labelledby="edit-bio-modal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-sm-12">
+                <h4 class="layout-section-header">Message Brad Johnson</h4>
+                <div class="form-group">
+                  <textarea class="form-control" rows="10" id="comment" placeholder="Type a message..."></textarea>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12 modal-btn-wrapper">
+                    <button class="cancel-btn pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-chevron-left"></span> Cancel</button>
+                    <button class="btn btn-outline pull-right">Send</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Message Modal -->
+
+<!-- Follower Modal -->
+<div class="modal fade" id="followers-modal" tabindex="-1" role="dialog" aria-labelledby="followers-modal-label">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="message-modal-label">Modal title</h4>
+        <h4 class="modal-title layout-section-header" id="message-modal-label">13,908 Followers</h4>
       </div>
       <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary">Send Message</button>
+        <div class="container-fluid">
+            <div class="col-sm-8 follower-wrapper">
+              <img src="assets/images/Profile-pic.JPG" alt="profile picture" class="img-responsive">
+              <div>
+                <h4>Leslie Johnson</h4>
+                <p>Collector from Portland, Oregon</p>
+              </div>
+            </div>
+            <div class="col-sm-8 follower-wrapper">
+              <img src="assets/images/Profile-pic.JPG" alt="profile picture" class="img-responsive">
+              <div>
+                <h4>Leslie Johnson</h4>
+                <p>Collector from Portland, Oregon</p>
+              </div>
+            </div>
+            <div class="col-sm-8 follower-wrapper">
+              <img src="assets/images/Profile-pic.JPG" alt="profile picture" class="img-responsive">
+              <div>
+                <h4>Leslie Johnson</h4>
+                <p>Collector from Portland, Oregon</p>
+              </div>
+            </div>
+            <div class="col-sm-8 follower-wrapper">
+              <img src="assets/images/Profile-pic.JPG" alt="profile picture" class="img-responsive">
+              <div>
+                <h4>Leslie Johnson</h4>
+                <p>Collector from Portland, Oregon</p>
+              </div>
+            </div>
+            <div class="col-sm-8 follower-wrapper">
+              <img src="assets/images/Profile-pic.JPG" alt="profile picture" class="img-responsive">
+              <div>
+                <h4>Leslie Johnson</h4>
+                <p>Collector from Portland, Oregon</p>
+              </div>
+            </div>
+        </div>
       </div>
     </div>
   </div>

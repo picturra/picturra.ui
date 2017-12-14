@@ -21,5 +21,10 @@ $(window).scroll(function() {
 
 // Smooth scroll to top
 $('.top-btn').click(function() {
-  $('html,body').animate({scrollTop: 0},600);
+  $('html, body').animate({scrollTop: 0},600);
+});
+
+$('.filter-wrapper button').click(function() {
+  let $top = $('.profile-bio-section').outerHeight(true);
+  $('html, body').animate({scrollTop: $top - 55},600);
 });

@@ -4,4 +4,5 @@
 
 /*Components*/
 @import 'layouts/portfolio-main.css';
-@import 'components/portfolio-gallery.css'
+@import 'components/portfolio-gallery.css';
+@import 'components/navbar-footer.css';
