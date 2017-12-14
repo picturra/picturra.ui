@@ -23,6 +23,7 @@ h1,h2,h3,h4,h5,h6 {
 a, a:hover {
   font-family: NeuzeitGro-Bol !important;
   color: inherit;
+  cursor: pointer;
 }
 
 ul {
@@ -89,6 +90,10 @@ input[type="color"]:focus,
   padding-left: 5px;
 }
 
+textarea {
+  resize: none;
+}
+
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
@@ -116,9 +121,6 @@ label {
 .btn {
   border-radius: 0;
   border: 0;
-}
-
-.btn-default {
   color: #ffffff;
   background-color: #000;
   font-family: NeuzeitGro-Bol;
@@ -126,11 +128,23 @@ label {
 
 .btn:hover {
   background-color: #000000;
+  color: #fff;
 }
 
 .btn.active, .btn:focus, .btn:active {
   box-shadow: none !important;
   outline: none !important;
+}
+
+.btn-lg-black {
+  font-family: NeuzeitGro-Bol;
+  font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 55px;
+  padding-right: 55px;
+  margin-top: 30px;
+  background-color: #000000;
 }
 
 .btn-outline {
@@ -235,6 +249,14 @@ label {
 }
 
 /*Modals*/
+.modal-header {
+  border-bottom: 0;
+}
+
+.modal-footer {
+  border: 0;
+}
+
 .modal-content {
   border-radius: 0;
 }
