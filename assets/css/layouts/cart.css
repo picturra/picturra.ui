@@ -1,20 +1,35 @@
+.order-wrapper,
 .cart-wrapper {
   margin-top: 80px;
   padding-bottom: 150px;
 }
 
+.order-header-row,
 .cart-header-row {
   border-bottom: solid 2px #000;
   padding-bottom: 20px;
 }
 
-.cart-artwork-row {
+.cart-artwork-row,
+.order-detail-row,
+.order-item-row {
   border-bottom: solid 1px #bbb;
   padding: 20px 0 20px 0;
 }
 
+.order-detail-row,
+.order-item-row:last-of-type {
+  border-bottom: solid 2px #000;
+}
+
+.order-detail-row ul,
 .cart-artwork-row ul {
   margin-bottom: 0;
+}
+
+.amount-paid,
+.cart-artwork-title {
+  font-size: 16px;
 }
 
 .cart-artwork-row:last-of-type {
@@ -25,6 +40,7 @@
   margin-bottom: 0;
 }
 
+.order-artwork-div,
 .cart-artwork-div {
   display: flex;
 }
@@ -35,7 +51,7 @@
 }
 
 .cart-artwork-details h6 {
-  margin: 0;
+  margin: 0 0 5px 0;
 }
 
 .cart-artwork-details > a > li {
@@ -44,9 +60,16 @@
   margin-top: 10px;
 }
 
+.order-number,
+.order-status,
+.order-recipient,
 .cart-artwork-price,
 .cart-shipping-price {
   font-family: NeuzeitGro-Bol;
+}
+
+.cart-shipping-price ~ * {
+  font-size: 12px;
 }
 
 .cart-buttons {
@@ -84,30 +107,66 @@
   font-size: 18px;
 }
 
-.btn-lg-outline {
-  margin-top: 0;
+.expand-btn {
+  font-family: NeuzeitGro-Bol;
+  background-color: #fff;
+  padding: 0;
+  margin: 0;
+  color: #000;
+  border: 0;
+}
+
+.expand-btn:before {
+  font-family: 'Glyphicons Halflings';
+  content: "\e114";
+}
+
+.expand-btn::after {
+  content: " View More";
+}
+
+.expand-btn[aria-expanded="true"]::before {
+  font-family: 'Glyphicons Halflings';
+  content: "\e113";
+}
+
+.expand-btn[aria-expanded="true"]::after {
+  content: " View Less";
+}
+
+.order-item-number-div span {
+  font-weight: bold;
 }
 
 @media (max-width: 767px) {
+  .order-header-row h5,
   .cart-header-row h5 {
     display: none;
+  }
+
+  .order-item-number-div {
+    text-align: left;
   }
 
   .cart-artwork-price:before {
     content: 'Artwork Price: ';
     display: inline-block;
+    white-space: pre;
   }
 
   .cart-shipping-price:before {
     content: 'Shipping: ';
     display: inline-block;
     margin-bottom: 10px;
+    white-space: pre;
   }
 
+  .order-item-row > div,
+  .order-detail-row > div,
   .cart-artwork-div,
   .cart-artwork-div ~ div,
   .cart-artwork-div ~ div > ul {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
 
   .cart-delivery-payment-row div:first-of-type {
