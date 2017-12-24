@@ -1,0 +1,13 @@
+.fave-artist-name {
+  font-family: NeuzeitGro-Reg;
+}
+.remove-favorite {
+  display: block;
+  font-family: NeuzeitGro-Reg !important;
+  font-size: 11px;
+  margin-top: 15px;
+  text-decoration: underline;
+}
+.remove-favorite:hover {
+  font-family: NeuzeitGro-Reg !important;
+}
