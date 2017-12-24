@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="theme-color" content="#000000">
+    <link rel="icon" href="">
+
+    <title>Picturra</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Flickity for carousel -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <!-- Fancybox for lightbox -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+  </head>
+
+  <body>
+    <!-- Fixed Navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="navbar-header">
+        <a href="#" class="navbar-brand navbar-brand-image"><img src="./assets/images/Profile-pic.JPG" alt="Profile picture"></a>
+        <a href="#" class="navbar-brand navbar-brand-text">Jenn Baker</a>
+      </div>
+      <div id="navbar" class="navbar-right">
+          <form class="navbar-form navbar-left collapse navbar-collapse">
+            <div class="form-group has-feedback search-box">
+              <input type="text" class="form-control search-input" placeholder="Search">
+              <span class="glyphicon glyphicon-search form-control-feedback"></span>
+            </div>
+          </form>
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu<span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
+            <ul class="dropdown-menu artist-menu">
+              <ul class="dropdown-lists">
+                <li><a href="#">View My Portfolio</a></li>
+                <li><a href="#">Manage My Portfolio</a></li>
+                <li><a href="#">Manage Orders</a></li>
+                <li><a href="#">Messages</a></li>
+              </ul>
+
+              <li role="separator" class="divider"></li>
+              <ul class="dropdown-lists">
+                <li><a href="#">Cart</a></li>
+                <li><a href="#">Purchases</a></li>
+                <li><a href="#">Favorites</a></li>
+              </ul>
+
+              <li role="separator" class="divider"></li>
+              <div class="row">
+                <div class="col-sm-4">
+                  <img src="./assets/images/Profile-pic.JPG" alt="Profile Picture" class="img-responsive menu-profile-pic">
+                </div>
+                <div class="col-sm-6 menu-artist-div">
+                  <ul class="menu-artist-list">
+                    <li><a href="#"><span class="menu-bold">Leslie Johnson</span></a></li>
+                    <li><a href="#">Account Settings</a></li>
+                    <li><a href="#">Sign Out</a></li>
+                  </ul>
+                </div>
+              </div>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Begin page content -->
+    <div class="portfolio-management-wrapper">
+      <div class="container">
+        <div class="row">
+          <!-- Bio and collections div -->
+          <div class="col-md-4">
+            <div class="row">
+
+              <!-- Bio div -->
+              <div class="col-xs-12 bio-management-wrapper">
+                <h4 class="layout-section-header">Biography<button class="btn btn-default pull-right header-btn" data-toggle="modal" data-target="#edit-bio-modal">Edit</button></h4>
+                <div class="bio-content">
+                  <div>
+                    <img src="./assets/images/Profile-pic.JPG" alt="" class="img-responsive bio-management-pic">
+                  </div>
+                  <div class="bio-management-right-div">
+                    <span class="profile-category">Portraits in Oils</span>
+                    <span class="profile-location"><span class="glyphicon glyphicon-map-marker"></span>Portland, Oregon</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Collections div -->
+              <div class="col-xs-12 collections-management-wrapper">
+                <h4 class="layout-section-header">Collections<button class="btn btn-default header-btn pull-right" data-toggle="modal" data-target="#collections-sort-modal">Sort</button>
+                  <button class="btn btn-default header-btn pull-right" style="margin-right: 10px;">&#43; Add</button>
+                </h4>
+                <div class="row">
+                  <div class="col-xs-12">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12">
+                    <ul class="collections-list">
+                      <li>
+                        <ul class="list-inline">
+                          <li>01</li>
+                          <li>Oil Paintings</li>
+                        </ul>
+                      </li>
+                        <ul class="edit-remove">
+                          <li><a href="#">Edit</a></li>
+                          <li><a href="#">Remove</a></li>
+                      </ul>
+                    </ul>
+                    <ul class="collections-list">
+                      <li>
+                        <ul class="list-inline">
+                          <li>02</li>
+                          <li>Photographs</li>
+                        </ul>
+                      </li>
+                        <ul class="edit-remove">
+                          <li><a href="#">Edit</a></li>
+                          <li><a href="#">Remove</a></li>
+                      </ul>
+                    </ul>
+                    <ul class="collections-list">
+                      <li>
+                        <ul class="list-inline">
+                          <li>03</li>
+                          <li>Landscapes</li>
+                        </ul>
+                      </li>
+                        <ul class="edit-remove">
+                          <li><a href="#">Edit</a></li>
+                          <li><a href="#">Remove</a></li>
+                      </ul>
+                    </ul>
+                    <ul class="collections-list">
+                      <li>
+                        <ul class="list-inline">
+                          <li>04</li>
+                          <li>Portraits</li>
+                        </ul>
+                      </li>
+                        <ul class="edit-remove">
+                          <li><a href="#">Edit</a></li>
+                          <li><a href="#">Remove</a></li>
+                      </ul>
+                    </ul>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Artwork div -->
+          <div class="col-md-7 col-md-offset-1">
+            <h4 class="layout-section-header">Artwork<button class="btn btn-default header-btn pull-right" data-toggle="modal" data-target="#artwork-sort-modal">Sort</button>
+              <button class="btn btn-default header-btn pull-right" style="margin-right: 10px;">&#43; Add</button>
+            </h4>
+            <div class="row">
+              <div class="col-xs-12">
+                <ul class="artwork-list-wrapper">
+                  <li>01</li>
+                  <li><img src="./assets/images/painting1.JPG" alt="" class="artwork-thumb img-responsive"></li>
+                  <li>White Church</li>
+                  <li>$500.00</li>
+                  <li>Oil Paintings</li>
+                  <li>
+                    <ul class="edit-remove">
+                      <li><a href="#">Edit</a></li>
+                      <li><a href="#">Remove</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <ul class="artwork-list-wrapper">
+                  <li>02</li>
+                  <li><img src="./assets/images/painting2.JPG" alt="" class="artwork-thumb img-responsive"></li>
+                  <li>White Church</li>
+                  <li>$500.00</li>
+                  <li>Oil Paintings</li>
+                  <li>
+                    <ul class="edit-remove">
+                      <li><a href="#">Edit</a></li>
+                      <li><a href="#">Remove</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <ul class="artwork-list-wrapper">
+                  <li>03</li>
+                  <li><img src="./assets/images/painting3.JPG" alt="" class="artwork-thumb img-responsive"></li>
+                  <li>White Church</li>
+                  <li>$500.00</li>
+                  <li>Oil Paintings</li>
+                  <li>
+                    <ul class="edit-remove">
+                      <li><a href="#">Edit</a></li>
+                      <li><a href="#">Remove</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <ul class="artwork-list-wrapper">
+                  <li>04</li>
+                  <li><img src="./assets/images/painting4.JPG" alt="" class="artwork-thumb img-responsive"></li>
+                  <li>White Church</li>
+                  <li>$500.00</li>
+                  <li>Oil Paintings</li>
+                  <li>
+                    <ul class="edit-remove">
+                      <li><a href="#">Edit</a></li>
+                      <li><a href="#">Remove</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <ul class="artwork-list-wrapper">
+                  <li>05</li>
+                  <li><img src="./assets/images/painting5.JPG" alt="" class="artwork-thumb img-responsive"></li>
+                  <li>White Church</li>
+                  <li>$500.00</li>
+                  <li>Oil Paintings</li>
+                  <li>
+                    <ul class="edit-remove">
+                      <li><a href="#">Edit</a></li>
+                      <li><a href="#">Remove</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <ul class="artwork-list-wrapper">
+                  <li>06</li>
+                  <li><img src="./assets/images/painting6.JPG" alt="" class="artwork-thumb img-responsive"></li>
+                  <li>White Church</li>
+                  <li>$500.00</li>
+                  <li>Oil Paintings</li>
+                  <li>
+                    <ul class="edit-remove">
+                      <li><a href="#">Edit</a></li>
+                      <li><a href="#">Remove</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Edit Bio modal -->
+    <div class="modal fade" id="edit-bio-modal" tabindex="-1" role="dialog" aria-labelledby="edit-bio-modal">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-sm-4">
+                <h4 class="layout-section-header">Your Display Photo</h4>
+                <img class="img-responsive" src="./assets/images/Profile-pic.JPG" alt="Profile Picture">
+                <button class="btn-no-box">Remove</button>
+              </div>
+              <div class="col-sm-8">
+                <h4 class="layout-section-header">Your Artist Bio</h4>
+                <div class="row">
+                  <div class="col-xs-8">
+                    <div class="input-group">
+                      <input type="text" id="display-name-input" class="form-control" placeholder="Jenn Baker" aria-label="Your Display Name">
+                      <label for="display-name-input">Your Display Name</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-8">
+                    <div class="input-group">
+                      <input type="text" id="title-input" class="form-control" placeholder="Jenn Baker" aria-label="Your Title">
+                      <label for="title-input">Your Title*</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-8">
+                    <div class="input-group">
+                      <input type="text" id="location-input" class="form-control" placeholder="Jenn Baker" aria-label="Your Location">
+                      <label for="location-input">Your Location*</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12">
+                    <div class="input-group">
+                      <textarea maxlength="500" rows="5" id="artist-statement-input" class="form-control" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat" aria-label="Artist Statement"></textarea>
+                      <label for="artist-statement-input">Artist Statement*</label>
+                      <p>Share a brief statement about yourself and your work. 500 character limit.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-8">
+                    <div class="input-group">
+                      <input type="text" id="location-input" class="form-control" placeholder="Jenn Baker" aria-label="Your Location">
+                      <label for="cv-input">Your C.V.</label>
+                      <p>Upload your professional C.V. pdf, jpg, and doc formats supported.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12 modal-btn-wrapper">
+                    <button class="cancel-btn pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-chevron-left"></span> Cancel</button>
+                    <button class="btn btn-default pull-right">Save</button>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Edit Bio Modal -->
+
+    <!-- Artwork sort modal -->
+      <div class="modal fade" id="artwork-sort-modal" tabindex="-1" role="dialog" aria-labelledby="artwork-sort-modal">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+              <h4 class="layout-section-header">Sort Artwork</h4>
+              <div class="row">
+                <div class="col-xs-12">
+                  <p>Add Artwork to the Collections or click and drag the arrows to reorder.</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12" id="artwork-sortable">
+                  <ul class="artwork-list-wrapper artwork-sort">
+                    <li>01</li>
+                    <li><img src="./assets/images/painting1.JPG" alt="" class="artwork-thumb img-responsive"></li>
+                    <li>White Church</li>
+                    <li>Oil Paintings</li>
+                  </ul>
+                  <ul class="artwork-list-wrapper artwork-sort">
+                    <li>02</li>
+                    <li><img src="./assets/images/painting2.JPG" alt="" class="artwork-thumb img-responsive"></li>
+                    <li>White Church</li>
+                    <li>Oil Paintings</li>
+                  </ul>
+                  <ul class="artwork-list-wrapper artwork-sort">
+                    <li>03</li>
+                    <li><img src="./assets/images/painting3.JPG" alt="" class="artwork-thumb img-responsive"></li>
+                    <li>White Church</li>
+                    <li>Oil Paintings</li>
+                  </ul>
+                  <ul class="artwork-list-wrapper artwork-sort">
+                    <li>04</li>
+                    <li><img src="./assets/images/painting4.JPG" alt="" class="artwork-thumb img-responsive"></li>
+                    <li>White Church</li>
+                    <li>Oil Paintings</li>
+                  </ul>
+                  <ul class="artwork-list-wrapper artwork-sort">
+                    <li>05</li>
+                    <li><img src="./assets/images/painting5.JPG" alt="" class="artwork-thumb img-responsive"></li>
+                    <li>White Church</li>
+                    <li>Oil Paintings</li>
+                  </ul>
+                  <ul class="artwork-list-wrapper artwork-sort">
+                    <li>06</li>
+                    <li><img src="./assets/images/painting6.JPG" alt="" class="artwork-thumb img-responsive"></li>
+                    <li>White Church</li>
+                    <li>Oil Paintings</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12 modal-btn-wrapper">
+                  <button class="cancel-btn pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-chevron-left"></span> Cancel</button>
+                  <button class="btn btn-default pull-right">Save</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+                <!-- End Artwork Sort Modal -->
+
+                <!-- Collections sort modal -->
+                  <div class="modal fade" id="collections-sort-modal" tabindex="-1" role="dialog" aria-labelledby="collections-sort-modal">
+                    <div class="modal-dialog modal-sm" role="document">
+                      <div class="modal-content">
+                        <div class="modal-body">
+                          <h4 class="layout-section-header">Sort Collections</h4>
+                          <div class="row">
+                            <div class="col-xs-12">
+                              <p>Add Collections or click and drag the arrows to reorder.</p>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-xs-12" id="collections-sortable">
+                              <ul class="collections-list collections-sort">
+                                <li>01</li>
+                                <li>Oil Paintings</li>
+                              </ul>
+                              <ul class="collections-list collections-sort">
+                                <li>02</li>
+                                <li>Photographs</li>
+                              </ul>
+                              <ul class="collections-list collections-sort">
+                                <li>03</li>
+                                <li>Landscapes</li>
+                              </ul>
+                              <ul class="collections-list collections-sort">
+                                <li>04</li>
+                                <li>Portraits</li>
+                              </ul>
+
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-xs-12 modal-btn-wrapper">
+                              <button class="cancel-btn pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-chevron-left"></span> Cancel</button>
+                              <button class="btn btn-default pull-right">Save</button>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End collections sort modal -->
+
+                  <!-- Collections remove confirm modal -->
+                    <div class="modal fade" id="collections-remove-modal" tabindex="-1" role="dialog" aria-labelledby="collections-remove-modal">
+                      <div class="modal-dialog modal-sm" role="document">
+                        <div class="modal-content">
+                          <div class="modal-body">
+                            <h4 class="layout-section-header">Remove Collection</h4>
+                            <div class="row">
+                              <div class="col-xs-12">
+                                <p>Add Collections or click and drag the arrows to reorder.</p>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-xs-12" id="collections-sortable">
+                                <ul class="collections-list collections-sort">
+                                  <li>01</li>
+                                  <li>Oil Paintings</li>
+                                </ul>
+                                <ul class="collections-list collections-sort">
+                                  <li>02</li>
+                                  <li>Photographs</li>
+                                </ul>
+                                <ul class="collections-list collections-sort">
+                                  <li>03</li>
+                                  <li>Landscapes</li>
+                                </ul>
+                                <ul class="collections-list collections-sort">
+                                  <li>04</li>
+                                  <li>Portraits</li>
+                                </ul>
+
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-xs-12 modal-btn-wrapper">
+                                <button class="cancel-btn pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-chevron-left"></span> Cancel</button>
+                                <button class="btn btn-default pull-right">Save</button>
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End collections sort modal -->
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- End Page Content -->
+
+    <!-- Sticky Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row footer-row">
+          <div class="col-md-2">
+            <a href="#"><h5>Collectors</h5></a>
+              <ul>
+                <a href="#"><li>About our Collectors</li></a>
+                <a href="#"><li>Transaction FAQ</li></a>
+                <a href="#"><li>Collector Terms</li></a>
+              </ul>
+          </div>
+          <div class="col-md-2">
+            <a href="#"><h5>Artists</h5></a>
+              <ul>
+                <a href="#"><li>About out Artists</li></a>
+                <a href="#"><li>Portfolio Help Guide</li></a>
+                <a href="#"><li>Artist Terms</li></a>
+              </ul>
+          </div>
+          <div class="col-md-2">
+            <a href="#"><h5>About Us</h5></a>
+              <ul>
+                <a href="#"><li>Purpose</li></a>
+                <a href="#"><li>Contact Picturra</li></a>
+                <a href="#"><li>Site User Terms</li></a>
+              </ul>
+          </div>
+          <div class="col-md-4 col-md-offset-2">
+            <h2>Picturra</h2>
+            <h4>Tagline</h4>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- jQueryUI -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <!-- jQueryUI touch with Touch Punch -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- Isotope JS for gallery layout and sorting -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <script src="./assets/js/isotope-gallery.js"></script>
+    <!-- imagesLoaded plugin -->
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <!-- Flickity for carousel -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="assets/js/flickity-filters.js"></script>
+    <!-- Portfolio scripts -->
+    <script src="assets/js/portfolio-scripts.js"></script>
+    <!-- Fancybox for lightbox -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.js"></script>
+    <!-- Lightbox scripts -->
+    <script src="assets/js/lightbox-scripts.js"></script>
+    <!-- Porfolio Management scripts -->
+    <script src="assets/js/portfolio-management.js"></script>
+  </body>
+</html>

@@ -1,0 +1,132 @@
+.add-artwork-wrapper {
+  margin-top: 77px;
+  padding-bottom: 60px;
+}
+
+.add-artwork-wrapper input {
+  margin-bottom: 20px;
+}
+
+.add-artwork-wrapper input + label,
+.dropdown + p,
+.input-group + p,
+.input-group + label,
+.dropdown + label {
+  position: relative;
+  top: -15px;
+}
+
+.add-artwork-wrapper .input-group label {
+  top:0;
+}
+
+.add-artwork-wrapper input + .input-group-addon {
+  padding-right: 0;
+}
+
+.add-artwork-wrapper > .row,
+.add-artwork-wrapper > .row > * > .row {
+  margin-bottom: 50px;
+}
+
+.add-artwork-wrapper .layout-section-header {
+  margin-bottom: 30px;
+}
+
+.add-art-image-wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.add-art-image-box-div {
+  margin: 20px;
+}
+
+.add-art-image-box,
+.add-art-image-box-sm {
+  height: 200px;
+  width: 200px;
+  border: solid 3px #000;
+  font-family: NeuzeitGro-Bol;
+  font-size: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-art-image-box-sm {
+  width: 100px;
+  height: 100px;
+}
+
+.add-art-small-boxes-div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.add-art-image-box-div > a:hover {
+  text-decoration: none;
+}
+
+.btn-add-artwork,
+.btn-artist-save {
+  width: 200px;
+  background-color: #fff;
+  border: solid 3px #000;
+  color: #000 !important;
+}
+
+.btn-add-artwork:hover,
+.btn-artist-save:hover {
+  border-color: #000;
+  background-color: #000;
+  color: #fff !important;
+}
+
+.btn-line-modal {
+  width: 100%;
+  border: 0;
+  border-bottom: solid 1px #000;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  font-family: NeuzeitGro-Bol;
+  padding: 0;
+}
+
+.btn-line-modal>span {
+  font-weight:bold;
+  font-size: 18px;
+}
+
+.shipping-list-wrapper {
+  padding: 0 15px 0 15px;
+}
+
+.shipping-list-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  border-bottom: solid 1px #000;
+}
+
+.shipping-list-wrapper a:hover {
+  text-decoration: none;
+}
+
+.shipping-list-row:hover {
+  font-weight: bold;
+}
+
+.add-artwork-btn-row {
+  margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+  input,
+  .input-group {
+    max-width: 300px;
+  }
+}

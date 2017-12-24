@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="theme-color" content="#000000">
+    <link rel="icon" href="">
+
+    <title>Picturra</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Flickity for carousel -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <!-- Fancybox for lightbox -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+  </head>
+
+  <body>
+    <!-- Fixed Navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="navbar-header">
+        <a href="#" class="navbar-brand navbar-brand-image"><img src="./assets/images/Profile-pic.JPG" alt="Profile picture"></a>
+        <a href="#" class="navbar-brand navbar-brand-text">Jenn Baker</a>
+      </div>
+      <div id="navbar" class="navbar-right">
+          <form class="navbar-form navbar-left collapse navbar-collapse">
+            <div class="form-group has-feedback search-box">
+              <input type="text" class="form-control search-input" placeholder="Search">
+              <span class="glyphicon glyphicon-search form-control-feedback"></span>
+            </div>
+          </form>
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu<span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
+            <ul class="dropdown-menu artist-menu">
+              <ul class="dropdown-lists">
+                <li><a href="#">View My Portfolio</a></li>
+                <li><a href="#">Manage My Portfolio</a></li>
+                <li><a href="#">Manage Orders</a></li>
+                <li><a href="#">Messages</a></li>
+              </ul>
+
+              <li role="separator" class="divider"></li>
+              <ul class="dropdown-lists">
+                <li><a href="#">Cart</a></li>
+                <li><a href="#">Purchases</a></li>
+                <li><a href="#">Favorites</a></li>
+              </ul>
+
+              <li role="separator" class="divider"></li>
+              <div class="row">
+                <div class="col-sm-4">
+                  <img src="./assets/images/Profile-pic.JPG" alt="Profile Picture" class="img-responsive menu-profile-pic">
+                </div>
+                <div class="col-sm-6 menu-artist-div">
+                  <ul class="menu-artist-list">
+                    <li><a href="#"><span class="menu-bold">Leslie Johnson</span></a></li>
+                    <li><a href="#">Account Settings</a></li>
+                    <li><a href="#">Sign Out</a></li>
+                  </ul>
+                </div>
+              </div>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Begin page content -->
+    <div class="container add-artwork-wrapper">
+      <div class="row">
+        <div class="col-xs-12">
+          <button class="cancel-btn pull-left"><span class="glyphicon glyphicon-chevron-left"></span> Cancel</button>
+        </div>
+      </div>
+
+      <!-- Your Bio Section -->
+      <div class="row">
+        <div class="col-xs-12">
+          <h4 class="layout-section-header">Your Bio</h4>
+        </div>
+
+        <div class="col-sm-12">
+          <h5>Your Key Image</h5>
+
+          <div class="row">
+            <div class="col-sm-3 add-art-image-wrapper">
+              <div class="add-art-image-box-div">
+                <a href="#">
+                  <div class="add-art-image-box">
+                    <span>+</span>
+                  </div>
+                </a>
+                <p>Click + to upload an image. JPG, PNG, and TIFF accepted.</p>
+              </div>
+            </div>
+
+            <div class="col-sm-8 col-sm-offset-1">
+              <div class="row">
+                <div class="col-sm-5">
+                  <input type="text"  class="form-control" required>
+                  <label for="display-name-input">Your Display Name*</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-5">
+                  <input type="text"  class="form-control" required>
+                  <label for="display-name-input">Your Title* ex: Oil Painter</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-5">
+                  <input type="text"  class="form-control" required>
+                  <label for="display-name-input">Your Location*</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-8">
+                  <textarea rows="5"  class="form-control" required></textarea>
+                  <label for="display-name-input">Artists Statement*</label>
+                  <p>Share a breif statement about yourself and your artistic practice.</p>
+                </div>
+              </div>
+              <div class="row add-artwork-btn-row">
+                <div class="col-sm-4">
+                  <button class="btn-line-modal">Add Your CV<span>+</span></button>
+                  <p>Upload your Professional CV, pdf accepted.*</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Your Bio section -->
+
+      <!-- Artwork Sales & Earnings -->
+      <div class="row">
+        <div class="col-xs-12">
+          <h4 class="layout-section-header">Artwork Sales and Earnings</h4>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="dropdown dropdown-btn-div">
+                <button class="dropdown-btn dropdown-toggle" type="button" id="dropdown-category" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    Do you intend to sell your Artwork on Picturra?
+                    <span class="glyphicon glyphicon-chevron-down"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdown-category">
+                  <li><a href="#">Yes, I will sell my artwork on Picturra</a></li>
+                  <li><a href="#">No, I will not sell my artwork on Picturra</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-5">
+              <h5>Your Address</h5>
+              <div class="row">
+                <div class="col-sm-12">
+                  <input type="text"  class="form-control" required>
+                  <label for="display-name-input">Street*</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-5">
+                  <input type="text"  class="form-control" required>
+                  <label for="display-name-input">City*</label>
+                </div>
+                <div class="col-sm-3">
+                  <div class="dropdown dropdown-btn-div">
+                    <button class="dropdown-btn dropdown-toggle" type="button" id="dropdown-category" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Select
+                        <span class="glyphicon glyphicon-chevron-down"></span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-scroll" aria-labelledby="dropdown-category">
+                      <li><a href="#">AL</a></li>
+                      <li><a href="#">AK</a></li>
+                      <li><a href="#">AZ</a></li>
+                      <li><a href="#">AR</a></li>
+                      <li><a href="#">CA</a></li>
+                      <li><a href="#">CO</a></li>
+                      <li><a href="#">CT</a></li>
+                      <li><a href="#">DE</a></li>
+                      <li><a href="#">FL</a></li>
+                      <li><a href="#">GA</a></li>
+                      <li><a href="#">HI</a></li>
+                      <li><a href="#">ID</a></li>
+                      <li><a href="#">IL</a></li>
+                      <li><a href="#">IN</a></li>
+                      <li><a href="#">IA</a></li>
+                      <li><a href="#">KS</a></li>
+                      <li><a href="#">KY</a></li>
+                      <li><a href="#">LA</a></li>
+                      <li><a href="#">ME</a></li>
+                      <li><a href="#">MD</a></li>
+                      <li><a href="#">MA</a></li>
+                      <li><a href="#">MI</a></li>
+                      <li><a href="#">MN</a></li>
+                      <li><a href="#">MS</a></li>
+                      <li><a href="#">MO</a></li>
+                      <li><a href="#">MT</a></li>
+                      <li><a href="#">NE</a></li>
+                      <li><a href="#">NV</a></li>
+                      <li><a href="#">NH</a></li>
+                      <li><a href="#">NJ</a></li>
+                      <li><a href="#">NM</a></li>
+                      <li><a href="#">NY</a></li>
+                      <li><a href="#">NC</a></li>
+                      <li><a href="#">ND</a></li>
+                      <li><a href="#">OH</a></li>
+                      <li><a href="#">OK</a></li>
+                      <li><a href="#">OR</a></li>
+                      <li><a href="#">PA</a></li>
+                      <li><a href="#">RI</a></li>
+                      <li><a href="#">SC</a></li>
+                      <li><a href="#">SD</a></li>
+                      <li><a href="#">TN</a></li>
+                      <li><a href="#">TX</a></li>
+                      <li><a href="#">UT</a></li>
+                      <li><a href="#">VT</a></li>
+                      <li><a href="#">VA</a></li>
+                      <li><a href="#">WA</a></li>
+                      <li><a href="#">WV</a></li>
+                      <li><a href="#">WI</a></li>
+                      <li><a href="#">WI</a></li>
+                      <li><a href="#">WY</a></li>
+                    </ul>
+                  </div>
+                  <label for="dropdown-category">State*</label>
+                </div>
+                <div class="col-sm-4">
+                  <input type="text"  class="form-control" required>
+                  <label for="display-name-input">Postal Code*</label>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-2 col-sm-offset-1">
+              <h5>Your Date of Birth</h5>
+              <div class="row">
+                <div class="col-sm-12">
+                  <input type="text"  class="form-control" required>
+                  <label for="display-name-input">MM/DD/YYYY</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-5">
+              <h5>Will you receive your earnings as an individual or business?</h5>
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="dropdown dropdown-btn-div">
+                    <button class="dropdown-btn dropdown-toggle" type="button" id="dropdown-category" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Select
+                        <span class="glyphicon glyphicon-chevron-down"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdown-category">
+                      <li><a href="#">Business</a></li>
+                      <li><a href="#">Individual</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <input type="text"  class="form-control" required>
+                  <label for="display-name-input">Social Security Number*</label>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-5 col-sm-offset-1">
+              <h5>Where would you like your earnings deposited?</h5>
+              <div class="row">
+                <div class="col-sm-5">
+                  <div class="dropdown dropdown-btn-div">
+                    <button class="dropdown-btn dropdown-toggle" type="button" id="dropdown-category" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Select
+                        <span class="glyphicon glyphicon-chevron-down"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdown-category">
+                      <li><a href="#">Checking Account</a></li>
+                      <li><a href="#">Venmo</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-5">
+                  <input type="text"  class="form-control" required>
+                  <label for="display-name-input">Bank Account Number*</label>
+                </div>
+                <div class="col-sm-5">
+                  <input type="text"  class="form-control" required>
+                  <label for="display-name-input">Bank Routing Number*</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <span class="glyphicon glyphicon-lock"></span><h8> This information will be securely processed by our <a href="#">payments partner</a>.</h8>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Artwork Sales & Earnings -->
+
+      <!-- Transaction Terms -->
+      <div class="row">
+        <div class="col-xs-12">
+          <h4 class="layout-section-header">Your Transaction Terms</h4>
+          <div class="row">
+            <div class="col-sm-5">
+              <h5>Which Carriers should Picturra generate Shipping Labels for?</h5>
+              <div class="row">
+                <div class="col-sm-7">
+                  <div class="dropdown dropdown-btn-div">
+                    <button class="dropdown-btn dropdown-toggle" type="button" id="dropdown-category" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Select
+                        <span class="glyphicon glyphicon-chevron-down"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdown-category">
+                      <li><a href="#">USPS, FedEx, and UPS</a></li>
+                      <li><a href="#">USPS and FedEx</a></li>
+                      <li><a href="#">USPS and UPS</a></li>
+                      <li><a href="#">FedEx and UPS</a></li>
+                      <li><a href="#">USPS</a></li>
+                      <li><a href="#">FedEx</a></li>
+                      <li><a href="#">UPS</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12">
+                  <h5>How much time will it take you to prepare orders for Shipping?</h5>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-7">
+                  <div class="dropdown dropdown-btn-div">
+                    <button class="dropdown-btn dropdown-toggle" type="button" id="dropdown-category" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Select
+                        <span class="glyphicon glyphicon-chevron-down"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdown-category">
+                      <li><a href="#">Same Day</a></li>
+                      <li><a href="#">1 - 2 Days</a></li>
+                      <li><a href="#">3 - 5 Days</a></li>
+                      <li><a href="#">1 Week</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-sm-offset-1">
+              <div class="row">
+                <div class="col-sm-12">
+                  <h5>Will you allow your Collectors to return Artwork for a Full Refund?</h5>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-9">
+                  <div class="dropdown dropdown-btn-div">
+                    <button class="dropdown-btn dropdown-toggle" type="button" id="dropdown-category" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Select
+                        <span class="glyphicon glyphicon-chevron-down"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdown-category">
+                      <li><a href="#">Yes, if returned within 1 week of Delivery</a></li>
+                      <li><a href="#">Yes, if returned within 2 weeks of Delivery</a></li>
+                      <li><a href="#">Yes, if returned within 1 month of Delivery</a></li>
+                      <li><a href="#">No, I will not allow Artwork Returns</a></li>
+                    </ul>
+                  </div>
+                  <p>The Collector is responsible for return shipping costs. If the item is not returned in its original condition, the Collector is responsible for any loss in value. As the Artist, you are responsible for issuing a full or partial payment refund once the returned Artwork is received.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Transaction Terms -->
+
+
+      <!-- Submit -->
+      <div class="row">
+        <div class="col-sm-12 text-right">
+          <p>By clicking Save, you confirm that you’ve read and agree to Picturra’s <a>Seller Terms and Conditions</a></p>
+          <button class="btn btn-default btn-lg-outline" data-toggle="modal" data-target="#order-submit-modal">Save and Finish</button>
+        </div>
+      </div>
+      <!-- End Submit -->
+
+      <!-- Your Bio Section -->
+      <div class="row">
+        <div class="col-xs-12">
+          <h4 class="layout-section-header">Your Bio</h4>
+        </div>
+
+        <div class="col-sm-12">
+          <h5>Your Key Image</h5>
+
+          <div class="row">
+            <div class="col-sm-3 add-art-image-wrapper">
+              <div class="add-art-image-box-div">
+                <a href="#">
+                  <div class="add-art-image-box">
+                    <span>+</span>
+                  </div>
+                </a>
+                <p>Click + to upload an image. JPG, PNG, and TIFF accepted.</p>
+              </div>
+            </div>
+
+            <div class="col-sm-8 col-sm-offset-1">
+              <div class="row">
+                <div class="col-sm-5">
+                  <input type="text"  class="form-control" required>
+                  <label for="display-name-input">Your Display Name*</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-5">
+                  <input type="text"  class="form-control" required>
+                  <label for="display-name-input">Your Title* ex: Oil Painter</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-5">
+                  <input type="text"  class="form-control" required>
+                  <label for="display-name-input">Your Location*</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-8">
+                  <textarea rows="5"  class="form-control" required></textarea>
+                  <label for="display-name-input">Artists Statement*</label>
+                  <p>Share a breif statement about yourself and your artistic practice.</p>
+                </div>
+              </div>
+              <div class="row add-artwork-btn-row">
+                <div class="col-sm-4">
+                  <button class="btn-line-modal">Add Your CV<span>+</span></button>
+                  <p>Upload your Professional CV, pdf accepted.*</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Your Bio section -->
+
+      <!-- Artwork Sales, Non-seller -->
+      <div class="row">
+        <div class="col-sm-12">
+          <h4 class="layout-section-header">Artwork Sales and Earnings</h4>
+          <h5>Do you intend to sell your Artwork on Picturra?</h5>
+          <p>You must be You must be 18 years or older and live in the United States to sell your Artwork on Picturra.</p>
+
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="row">
+                <div class="col-sm-7">
+                  <div class="dropdown dropdown-btn-div">
+                    <button class="dropdown-btn dropdown-toggle" type="button" id="dropdown-category" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Select
+                        <span class="glyphicon glyphicon-chevron-down"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdown-category">
+                      <li><a href="#">Yes, I will sell my artwork on Picturra</a></li>
+                      <li><a href="#">No, I will not sell my artwork on Picturra</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-sm-5">
+                  <h6>Your Country</h6>
+                  <div class="dropdown dropdown-btn-div">
+                    <button class="dropdown-btn dropdown-toggle" type="button" id="dropdown-category" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Select
+                        <span class="glyphicon glyphicon-chevron-down"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdown-category">
+                      <li><a href="#">Test</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-sm-3 col-sm-offset-2">
+                  <h6>Your Date of Birth</h6>
+                  <input type="text"  class="form-control" required>
+                  <label for="display-name-input">MM/DD/YYYY</label>
+                </div>
+              </div>
+              <p>Although you may not currently sell Artwork on Picturra, you may continue to use Picturra as a portfolio resource. We are working to support international Artist sales in the future, and will let you know when international sales become available.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End artwork sales -->
+
+      <!-- Submit -->
+      <div class="row">
+        <div class="col-sm-12 text-right">
+          <p>By clicking Save, you confirm that you’ve read and agree to Picturra’s <a>Seller Terms and Conditions</a></p>
+          <button class="btn btn-default btn-lg-outline">Save and Finish</button>
+        </div>
+      </div>
+      <!-- End Submit -->
+
+    </div>
+
+    <!-- End Page Content -->
+
+    <!-- Sticky Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row footer-row">
+          <div class="col-md-2">
+            <a href="#"><h5>Collectors</h5></a>
+              <ul>
+                <a href="#"><li>About our Collectors</li></a>
+                <a href="#"><li>Transaction FAQ</li></a>
+                <a href="#"><li>Collector Terms</li></a>
+              </ul>
+          </div>
+          <div class="col-md-2">
+            <a href="#"><h5>Artists</h5></a>
+              <ul>
+                <a href="#"><li>About out Artists</li></a>
+                <a href="#"><li>Portfolio Help Guide</li></a>
+                <a href="#"><li>Artist Terms</li></a>
+              </ul>
+          </div>
+          <div class="col-md-2">
+            <a href="#"><h5>About Us</h5></a>
+              <ul>
+                <a href="#"><li>Purpose</li></a>
+                <a href="#"><li>Contact Picturra</li></a>
+                <a href="#"><li>Site User Terms</li></a>
+              </ul>
+          </div>
+          <div class="col-md-4 col-md-offset-2">
+            <h2>Picturra</h2>
+            <h4>Tagline</h4>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- jQueryUI -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <!-- jQueryUI touch with Touch Punch -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- Isotope JS for gallery layout and sorting -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <script src="./assets/js/isotope-gallery.js"></script>
+    <!-- imagesLoaded plugin -->
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <!-- Flickity for carousel -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="assets/js/flickity-filters.js"></script>
+    <!-- Portfolio scripts -->
+    <script src="assets/js/portfolio-scripts.js"></script>
+    <!-- Fancybox for lightbox -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.js"></script>
+    <!-- Lightbox scripts -->
+    <script src="assets/js/lightbox-scripts.js"></script>
+    <!-- Porfolio Management scripts -->
+    <script src="assets/js/portfolio-management.js"></script>
+  </body>
+</html>

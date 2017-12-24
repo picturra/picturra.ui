@@ -2,8 +2,15 @@
 @import 'base/base.css';
 @import 'base/MyFontsWebfontsKit.css';
 
-/*Components*/
+/*Layouts*/
+@import 'layouts/lightbox-gallery.css';
 @import 'layouts/portfolio-main.css';
+@import 'layouts/portfolio-management.css';
+@import 'layouts/add-artwork.css';
+@import 'layouts/cart.css';
 @import 'layouts/favorites.css';
+@import 'layouts/messages.css';
+
+/*Components*/
 @import 'components/portfolio-gallery.css';
 @import 'components/navbar-footer.css';

@@ -1,0 +1,150 @@
+.messages-wrapper {
+  margin-top: 60px;
+}
+
+.messages-wrapper .search-box {
+  width: 100%;
+}
+
+.message-sidebar {
+  padding: 40px;
+  border-right: solid 1px #000;
+  height: 70vh;
+}
+
+.message-sidebar .search-box {
+  border-bottom: solid 1px #000;
+}
+
+.inbox-div {
+  padding: 15px;
+}
+
+.inbox-div > a {
+  display: flex;
+  text-decoration: none;
+}
+
+.message-details {
+  width: 100%;
+  height: 100%;
+}
+
+.name-and-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.name-and-title > span {
+  font-family: NeuzeitGro-Reg;
+  font-size: 12px;
+}
+
+.inbox-div:hover {
+  cursor: pointer;
+  background-color: #ddd;
+}
+
+.inbox-div img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.inbox-div h5 {
+  margin: 0 0 5px 0;
+}
+
+.inbox-div p {
+  margin: 0;
+  font-size: 12px;
+  font-family: NeuzeitGro-Reg;
+}
+
+p.unread {
+ font-family: NeuzeitGro-Bol;
+}
+
+.messages-main {
+  padding: 40px;
+}
+
+.user-header {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.user-header > img {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+
+.messages-main h4 {
+  margin: 0;
+}
+
+.message-content-wrapper {
+  padding: 15px 30px;
+  margin-bottom: 20px;
+  background-color: #eee;
+}
+
+.message-content-div {
+  display: flex;
+}
+
+.message-content-div p {
+  text-align: justify;
+}
+
+.message-content-div img {
+  height: 25px;
+  width: 25px;
+  margin-right: 15px;
+  margin-top: 5px;
+}
+
+.message-content-wrapper h7 {
+  font-size: 10px;
+}
+
+.message-content-wrapper h7:after {
+  content: "";
+  display: block;
+  width: 100%;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #000000;
+  margin-bottom: 10px;
+}
+
+.message-text-input-div {
+  padding: 10px 0 0 0;
+}
+
+.messages-main-wrapper .close {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .inbox-div {
+    border-bottom: solid 1px #000;
+  }
+  .messages-main-wrapper {
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    z-index: 1040;
+    width: 100%;
+    height: calc(100vh);
+    overflow-y: scroll;
+  }
+  .messages-main-wrapper button.close {
+    display: inherit;
+    margin: 20px;
+    font-size: 40px;
+    position: relative;
+    z-index: 1041;
+  }
+}

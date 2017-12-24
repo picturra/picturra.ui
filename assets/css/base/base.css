@@ -134,6 +134,8 @@ label {
 .btn.active, .btn:focus, .btn:active {
   box-shadow: none !important;
   outline: none !important;
+  background-color: #000;
+  color: #fff;
 }
 
 .btn-lg-black {
@@ -178,6 +180,12 @@ label {
   border-bottom-style: solid;
   border-bottom-width: 1px;
   border-bottom-color: #000;
+}
+
+.header-btn {
+  position: relative;
+  font-size: 12px;
+  padding: 3px 15px;
 }
 
 .cancel-btn {

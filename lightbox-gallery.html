@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="theme-color" content="#000000">
+    <link rel="icon" href="">
+
+    <title>Picturra</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Flickity for carousel -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <!-- Fancybox for lightbox -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+  </head>
+
+  <body>
+    <!-- Fixed Navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="navbar-header">
+        <a href="#" class="navbar-brand navbar-brand-image"><img src="./assets/images/Profile-pic.JPG" alt="Profile picture"></a>
+        <a href="#" class="navbar-brand navbar-brand-text">Jenn Baker</a>
+      </div>
+      <div id="navbar" class="navbar-right">
+          <form class="navbar-form navbar-left collapse navbar-collapse">
+            <div class="form-group has-feedback search-box">
+              <input type="text" class="form-control search-input" placeholder="Search">
+              <span class="glyphicon glyphicon-search form-control-feedback"></span>
+            </div>
+          </form>
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu<span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
+            <ul class="dropdown-menu artist-menu">
+              <ul class="dropdown-lists">
+                <li><a href="#">View My Portfolio</a></li>
+                <li><a href="#">Manage My Portfolio</a></li>
+                <li><a href="#">Manage Orders</a></li>
+                <li><a href="#">Messages</a></li>
+              </ul>
+
+              <li role="separator" class="divider"></li>
+              <ul class="dropdown-lists">
+                <li><a href="#">Cart</a></li>
+                <li><a href="#">Purchases</a></li>
+                <li><a href="#">Favorites</a></li>
+              </ul>
+
+              <li role="separator" class="divider"></li>
+              <div class="row">
+                <div class="col-sm-4">
+                  <img src="./assets/images/Profile-pic.JPG" alt="Profile Picture" class="img-responsive menu-profile-pic">
+                </div>
+                <div class="col-sm-6 menu-artist-div">
+                  <ul class="menu-artist-list">
+                    <li><a href="#"><span class="menu-bold">Leslie Johnson</span></a></li>
+                    <li><a href="#">Account Settings</a></li>
+                    <li><a href="#">Sign Out</a></li>
+                  </ul>
+                </div>
+              </div>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Begin page content -->
+    <div class="container">
+      <!-- Filters row -->
+      <div class="row gallery-filter-row lightbox-category-row">
+
+        <div class="col-md-2 all-link">
+          <a href="main.html">
+            <span class="glyphicon glyphicon-chevron-left"></span><span> All Artwork</span>
+          </a>
+        </div>
+        <div class="col-md-10">
+          <div class="filters-button-group" role="group" aria-label="Portfolio filters">
+            <a href="main.html" class="lightbox-category-links">
+              <span>Painting</span>
+            </a>
+            <a href="main.html" class="lightbox-category-links">
+              <span>Photography</span>
+            </a>
+            <a href="main.html" class="lightbox-category-links">
+              <span>Landscape</span>
+            </a>
+            <a href="main.html" class="lightbox-category-links">
+              <span>Portrait</span>
+            </a>
+            <a href="main.html" class="lightbox-category-links">
+              <span>Painting</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gallery and info wrapper -->
+      <!-- Thumbnails -->
+      <div class="row expanded-gallery-wrapper">
+        <div class="col-md-1 left-thumbnails">
+          <img src="assets/images/painting1.JPG" class="lightbox-thumb" alt="">
+          <img src="assets/images/painting2.JPG" class="lightbox-thumb" alt="">
+          <img src="assets/images/painting3.JPG" class="lightbox-thumb" alt="">
+        </div>
+
+        <!-- Selected view image -->
+        <div class="col-md-7 lightbox-main">
+          <a href="assets/images/painting1.JPG" data-fancybox="item-views" data-caption="Acrylic Painting on Linen, Created in 2009">
+            <img src="assets/images/painting1.JPG" class="img-responsive lightbox-shown" alt="">
+          </a>
+          <a href="assets/images/painting2.JPG" data-fancybox="item-views" data-caption="Oval oil painting on Velázquez canvas">
+            <img src="assets/images/painting2.JPG" class="img-responsive" alt="">
+          </a>
+          <a href="assets/images/painting3.JPG" data-fancybox="item-views" data-caption="Made with the best oil paints available">
+            <img src="assets/images/painting3.JPG" class="img-responsive" alt="">
+          </a>
+        </div>
+
+        <div class="col-md-1 responsive-thumbnails">
+          <img src="assets/images/painting1.JPG" class="lightbox-thumb" alt="">
+          <img src="assets/images/painting2.JPG" class="lightbox-thumb" alt="">
+          <img src="assets/images/painting3.JPG" class="lightbox-thumb" alt="">
+        </div>
+
+        <!-- Info sidebar -->
+        <div class="col-md-4 item-info-sidebar">
+          <h3>The Orange Roof</h3>
+          <span class="item-medium">Acrylic Painting on Linen, Created in 2009</span>
+          <span class="item-dimensions">18 x 12 x 1.5 inches</span>
+          <span class="item-availability">Editioned, 2 x 5 Available</span>
+          <span class="item-format">Framed</span>
+          <p class="item-description-text">Oval oil painting on Velázquez canvas. Made with
+            the best oil paints available and with pure Lapis
+            Lazuli. Two layers of varnish. Signed and dated. Part
+            of Marine Life series.
+          </p>
+          <div class="price-and-cart">
+            <span class="item-price">$1,200</span>
+            <span class="item-shipping-price">+$12.43 Shipping to 60625</span>
+            <button class="btn btn-lg-black">Add to Cart</button>
+            <a class="terms-link" data-toggle="modal" data-target="#terms-modal">View Transaction Terms + Reviews</a>
+          </div>
+        </div>
+
+      </div>
+
+    <!-- Terms Modal -->
+    <div class="modal fade" id="terms-modal" tabindex="-1" role="dialog" aria-labelledby="edit-bio-modal">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-sm-12">
+                <h4 class="layout-section-header">Transaction Terms</h4>
+                <div class="row">
+                  <div class="col-sm-4">
+                    <h5>Order Processing Time</h5>
+                    <p>1 - 2 Days</p>
+                  </div>
+                  <div class="col-sm-8">
+                    <h5>Return Policy</h5>
+                    <p>Accepts returns - Artwork must be returned within 2 weeks of Delivery</p>
+                    <p>As the Collector, you are responsible for return shipping costs. If the item is not returned in its original condition, you are responsible for any loss in value. The Artist may issue a full or partial payment refund based on the Artwork's condition once the returned Artwork is received.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <h4 class="layout-section-header">Transaction Reviews</h4>
+                  <span class="rating">Excellent + + + + +</span>
+                  <p>Based on 21 Reviews</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-10 col-sm-offset-2">
+                <div class="review-wrapper">
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <span class="rating">+ + + + +</span>
+                      <div class="review-div-summary">
+                        <img class="img-responsive" src="./assets/images/Profile-pic.JPG" alt="Profile picture">
+                        <div>
+                          <h5>Jasper Johns</h5>
+                          <p>7 days ago</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-9 review-div-text">
+                      <h5>Review Title</h5>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="review-wrapper">
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <span class="rating">+ + + + +</span>
+                      <div class="review-div-summary">
+                        <img class="img-responsive" src="./assets/images/Profile-pic.JPG" alt="Profile picture">
+                        <div>
+                          <h5>Jasper Johns</h5>
+                          <p>7 days ago</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-9 review-div-text">
+                      <h5>Review Title</h5>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="review-wrapper">
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <span class="rating">+ + + + +</span>
+                      <div class="review-div-summary">
+                        <img class="img-responsive" src="./assets/images/Profile-pic.JPG" alt="Profile picture">
+                        <div>
+                          <h5>Jasper Johns</h5>
+                          <p>7 days ago</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-9 review-div-text">
+                      <h5>Review Title</h5>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="review-wrapper">
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <span class="rating">+ + + + +</span>
+                      <div class="review-div-summary">
+                        <img class="img-responsive" src="./assets/images/Profile-pic.JPG" alt="Profile picture">
+                        <div>
+                          <h5>Jasper Johns</h5>
+                          <p>7 days ago</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-9 review-div-text">
+                      <h5>Review Title</h5>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12 modal-btn-wrapper">
+                <button class="cancel-btn pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-chevron-left"></span> Cancel</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Terms Modal -->
+
+    <!-- Terms Modal -->
+    <div class="modal fade" id="report-modal" tabindex="-1" role="dialog" aria-labelledby="report-modal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-sm-12">
+                <h4 class="layout-section-header">Report this artwork</h4>
+                <p>Please let us know how this artwork violates <a href="#">Picturra's Terms of Use.</a></p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-3">
+                <img class="img-responsive" src="./assets/images/Profile-pic.JPG" alt="Profile picture">
+                <ul class="report-art-details">
+                  <li><span>The Gray Door<span></li>
+                  <li><span>$200<span></li>
+                  <li><p>Etching</p></li>
+                </ul>
+              </div>
+              <div class="col-sm-9">
+                <div class="form-group">
+                  <textarea class="form-control" rows="10" placeholder="Begin typing..."></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12 modal-btn-wrapper">
+                <button class="cancel-btn pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-chevron-left"></span> Cancel</button>
+                <button class="btn btn-outline pull-right" data-dismiss="modal" data-target="#report-success-modal" data-toggle="modal">Report</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Terms Modal -->
+
+    <!-- Report Success Modal -->
+    <div class="modal fade" id="report-success-modal" tabindex="-1" role="dialog" aria-labelledby="report-modal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <div class="row">
+              <div class="col-sm-12">
+                <h4 class="layout-section-header">Thank You</h4>
+                <p>We've received your report and will begin working to resolve this violation of our Site User Terms. We will be in touch if we have any further questions</p>
+                <p>Thank you for your effor in maintaining a positive and productive environment for Picturra's Communiy of Artists + Collectors.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Report Success Modal -->
+
+    <!-- Message Modal -->
+    <div class="modal fade" id="message-modal" tabindex="-1" role="dialog" aria-labelledby="edit-bio-modal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-sm-12">
+                <h4 class="layout-section-header">Message Brad Johnson</h4>
+                <div class="form-group">
+                  <textarea class="form-control" rows="10" id="comment" placeholder="Type a message..."></textarea>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12 modal-btn-wrapper">
+                    <button class="cancel-btn pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-chevron-left"></span> Cancel</button>
+                    <button class="btn btn-outline pull-right">Send</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Message Modal -->
+
+    </div>
+    <!-- End Content -->
+
+    <!-- Side buttons -->
+    <div class="side-btn-wrapper">
+      <button class="btn side-btn"><span id="side-favorite-btn-icon" class="glyphicon glyphicon-heart"></span><span class="side-btn-text">Favorite<span></span></button>
+      <button class="btn side-btn" data-toggle="modal" data-target="#message-modal"><span id="side-message-btn-icon" class="glyphicon glyphicon-envelope"></span><span class="side-btn-text">Message<span></span></button>
+      <button class="btn side-btn" data-toggle="modal" data-target="#report-modal"><span id="side-report-btn-icon" class="glyphicon glyphicon-flag"></span><span class="side-btn-text">Report<span></span></button>
+      <button class="btn side-btn"><span id="side-follow-btn-icon">	&#43;</span><span class="side-btn-text">Follow<span></span></button>
+    </div>
+
+<!-- Sticky Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="row footer-row">
+      <div class="col-md-2">
+        <a href="#"><h5>Collectors</h5></a>
+          <ul>
+            <a href="#"><li>About our Collectors</li></a>
+            <a href="#"><li>Transaction FAQ</li></a>
+            <a href="#"><li>Collector Terms</li></a>
+          </ul>
+      </div>
+      <div class="col-md-2">
+        <a href="#"><h5>Artists</h5></a>
+          <ul>
+            <a href="#"><li>About out Artists</li></a>
+            <a href="#"><li>Portfolio Help Guide</li></a>
+            <a href="#"><li>Artist Terms</li></a>
+          </ul>
+      </div>
+      <div class="col-md-2">
+        <a href="#"><h5>About Us</h5></a>
+          <ul>
+            <a href="#"><li>Purpose</li></a>
+            <a href="#"><li>Contact Picturra</li></a>
+            <a href="#"><li>Site User Terms</li></a>
+          </ul>
+      </div>
+      <div class="col-md-4 col-md-offset-2">
+        <h2>Picturra</h2>
+        <h4>Tagline</h4>
+      </div>
+  </div>
+</footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- Isotope JS for gallery layout and sorting -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <script src="./assets/js/isotope-gallery.js"></script>
+    <!-- imagesLoaded plugin -->
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <!-- Flickity for carousel -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="assets/js/flickity-filters.js"></script>
+    <!-- Portfolio scripts -->
+    <script src="assets/js/portfolio-scripts.js"></script>
+    <!-- Fancybox for lightbox -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.js"></script>
+    <!-- Lightbox scripts -->
+    <script src="assets/js/lightbox-scripts.js"></script>
+  </body>
+</html>

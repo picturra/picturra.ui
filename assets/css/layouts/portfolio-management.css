@@ -1,0 +1,126 @@
+.portfolio-management-wrapper {
+  margin-top: 80px;
+  padding-bottom: 120px;
+}
+
+/*Biography*/
+.bio-management-wrapper,
+.collections-management-wrapper {
+  margin-bottom: 60px;
+}
+
+.bio-content {
+  display: flex;
+  align-items: flex-start;
+}
+
+.bio-management-pic {
+  max-width: 100px;
+}
+
+.bio-management-right-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 40px;
+}
+
+.bio-management-right-div>button {
+  align-self: flex-start;
+  padding-left: 30px;
+  padding-right: 30px;
+  align-self: flex-end;
+  margin-top: 23px;
+}
+
+/*Edit Bio Modal*/
+#edit-bio-modal h4 {
+  margin-bottom: 40px;
+}
+
+#edit-bio-modal img {
+  max-height: 300px;
+}
+
+#edit-bio-modal input::placeholder,
+#edit-bio-modal textarea::placeholder {
+  color: #000;
+}
+
+/*Collections and Artworks*/
+
+.collections-list,
+.artwork-list-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #aaaaaa;
+}
+
+.collections-list:first-of-type,
+.artwork-list-wrapper:first-of-type {
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #aaaaaa;
+}
+
+.artwork-thumb {
+  object-fit: cover;
+  width: 40px;
+  height: 40px;
+  clip: rect(0px, 40px, 40px, 0px);
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.artwork-sort {
+  justify-content: initial;
+  background-color: #ffffff;
+}
+
+.artwork-sort li {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.edit-remove {
+  font-size: 12px;
+  color: #aaaaaa;
+}
+
+.edit-remove>li:hover {
+  color: #000000;
+}
+
+.drag-drop-arrows {
+  padding: 10px;
+}
+
+.drag-drop-arrows span {
+  font-size: 14px !important;
+  margin: 0 !important;
+}
+
+.collections-sort {
+  justify-content: initial;
+  background-color: #ffffff;
+}
+
+.collections-sort > * {
+  margin-right: 20px;
+}
+
+.ui-sortable>ul:hover {
+  cursor: ns-resize;
+}
+
+@media (max-width: 340px) {
+  .artwork-thumb {
+    display: none;
+  }
+}

@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="theme-color" content="#000000">
+    <link rel="icon" href="">
+
+    <title>Picturra</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Flickity for carousel -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <!-- Fancybox for lightbox -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+  </head>
+
+  <body>
+    <!-- Fixed Navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="navbar-header">
+        <a href="#" class="navbar-brand navbar-brand-image"><img src="./assets/images/Profile-pic.JPG" alt="Profile picture"></a>
+        <a href="#" class="navbar-brand navbar-brand-text">Jenn Baker</a>
+      </div>
+      <div id="navbar" class="navbar-right">
+          <form class="navbar-form navbar-left collapse navbar-collapse">
+            <div class="form-group has-feedback search-box">
+              <input type="text" class="form-control search-input" placeholder="Search">
+              <span class="glyphicon glyphicon-search form-control-feedback"></span>
+            </div>
+          </form>
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu<span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
+            <ul class="dropdown-menu artist-menu">
+              <ul class="dropdown-lists">
+                <li><a href="#">View My Portfolio</a></li>
+                <li><a href="#">Manage My Portfolio</a></li>
+                <li><a href="#">Manage Orders</a></li>
+                <li><a href="#">Messages</a></li>
+              </ul>
+
+              <li role="separator" class="divider"></li>
+              <ul class="dropdown-lists">
+                <li><a href="#">Cart</a></li>
+                <li><a href="#">Purchases</a></li>
+                <li><a href="#">Favorites</a></li>
+              </ul>
+
+              <li role="separator" class="divider"></li>
+              <div class="row">
+                <div class="col-sm-4">
+                  <img src="./assets/images/Profile-pic.JPG" alt="Profile Picture" class="img-responsive menu-profile-pic">
+                </div>
+                <div class="col-sm-6 menu-artist-div">
+                  <ul class="menu-artist-list">
+                    <li><a href="#"><span class="menu-bold">Leslie Johnson</span></a></li>
+                    <li><a href="#">Account Settings</a></li>
+                    <li><a href="#">Sign Out</a></li>
+                  </ul>
+                </div>
+              </div>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Begin page content -->
+    <div class="container order-wrapper">
+      <!-- Header row -->
+      <div class="row order-header-row">
+        <div class="col-sm-2">
+          <h5>Order Number</h5>
+        </div>
+        <div class="col-sm-2">
+          <h5>Order Date</h5>
+        </div>
+        <div class="col-sm-4">
+          <h5>Ship To</h5>
+        </div>
+        <div class="col-sm-2">
+          <h5>Amount Paid</h5>
+        </div>
+      </div>
+      <!-- End header row -->
+
+      <!-- Order Details Row -->
+      <div class="row order-detail-row">
+        <div class="col-sm-2">
+          <span class="order-number">123456789</span>
+        </div>
+        <div class="col-sm-2">
+          <span>September 20, 2017</span>
+        </div>
+        <div class="col-sm-4">
+          <span class="order-recipient">Jenn Baker</span>
+          <ul>
+            <li>3943 N Halstead</li>
+            <li>Chicago, IL 60601</li>
+            <li>United States</li>
+          </ul>
+        </div>
+        <div class="col-sm-2">
+          <span class="cart-artwork-price">$1500.00</span>
+          <ul>
+            <li>Charged to Visa ****0921</li>
+          </ul>
+        </div>
+        <div class="col-sm-12">
+          <button class="expand-btn" data-toggle="collapse" data-target="#order-item-1"> </button>
+        </div>
+      </div>
+
+      <!-- Order Items Row -->
+      <div class="collapse" id="order-item-1">
+        <div class="row order-item-row">
+          <div class="col-sm-2 text-right order-item-number-div">
+            <span>01</span>
+          </div>
+          <div class="col-sm-2">
+            <span class="order-status">Order Received</span>
+          </div>
+          <div class="col-sm-4 order-artwork-div">
+            <div class="cart-artwork-img">
+              <img src="./assets/images/painting1.JPG" alt="" class="img-responsive">
+            </div>
+            <ul class="cart-artwork-details">
+              <li class=cart-artwork-title>The White Church</li>
+              <li>Jean Baker</li>
+            </ul>
+          </div>
+          <div class="col-sm-2">
+            <ul>
+              <li class="amount-paid">$125.00</li>
+              <li>+ 14.95 Shipping</li>
+            </ul>
+          </div>
+          <div class="col-sm-2">
+            <a href="#">Track Package</a>
+          </div>
+        </div>
+
+        <div class="row order-item-row">
+          <div class="col-sm-2 text-right order-item-number-div">
+            <span>01</span>
+          </div>
+          <div class="col-sm-2">
+            <span class="order-status">Order Received</span>
+          </div>
+          <div class="col-sm-4 order-artwork-div">
+            <div class="cart-artwork-img">
+              <img src="./assets/images/painting1.JPG" alt="" class="img-responsive">
+            </div>
+            <ul class="cart-artwork-details">
+              <li class=cart-artwork-title>The White Church</li>
+              <li>Jean Baker</li>
+            </ul>
+          </div>
+          <div class="col-sm-2">
+            <ul>
+              <li class="amount-paid">$125.00</li>
+              <li>+ 14.95 Shipping</li>
+            </ul>
+          </div>
+          <div class="col-sm-2">
+            <a href="#">Track Package</a>
+          </div>
+        </div>
+
+        <div class="row order-item-row">
+          <div class="col-sm-2 text-right order-item-number-div">
+            <span>01</span>
+          </div>
+          <div class="col-sm-2">
+            <span class="order-status">Order Received</span>
+          </div>
+          <div class="col-sm-4 order-artwork-div">
+            <div class="cart-artwork-img">
+              <img src="./assets/images/painting1.JPG" alt="" class="img-responsive">
+            </div>
+            <ul class="cart-artwork-details">
+              <li class=cart-artwork-title>The White Church</li>
+              <li>Jean Baker</li>
+            </ul>
+          </div>
+          <div class="col-sm-2">
+            <ul>
+              <li class="amount-paid">$125.00</li>
+              <li>+ 14.95 Shipping</li>
+            </ul>
+          </div>
+          <div class="col-sm-2">
+            <a href="#">Track Package</a>
+          </div>
+        </div>
+      </div>
+      <!-- End Order Items Row -->
+
+      <!-- End Order Details Row -->
+
+      <!-- Order Details Row -->
+      <div class="row order-detail-row">
+        <div class="col-sm-2">
+          <span class="order-number">123456789</span>
+        </div>
+        <div class="col-sm-2">
+          <span>September 20, 2017</span>
+        </div>
+        <div class="col-sm-4">
+          <span class="order-recipient">Jenn Baker</span>
+          <ul>
+            <li>3943 N Halstead</li>
+            <li>Chicago, IL 60601</li>
+            <li>United States</li>
+          </ul>
+        </div>
+        <div class="col-sm-2">
+          <span class="cart-artwork-price">$1500.00</span>
+          <ul>
+            <li>Charged to Visa ****0921</li>
+          </ul>
+        </div>
+        <div class="col-sm-12">
+          <button class="expand-btn" data-toggle="collapse" data-target="#order-item-2"> </button>
+        </div>
+      </div>
+
+      <!-- Order Items Row -->
+      <div class="collapse" id="order-item-2">
+        <div class="row order-item-row">
+          <div class="col-sm-2 text-right order-item-number-div">
+            <span>01</span>
+          </div>
+          <div class="col-sm-2">
+            <span class="order-status">Order Received</span>
+          </div>
+          <div class="col-sm-4 order-artwork-div">
+            <div class="cart-artwork-img">
+              <img src="./assets/images/painting1.JPG" alt="" class="img-responsive">
+            </div>
+            <ul class="cart-artwork-details">
+              <li class=cart-artwork-title>The White Church</li>
+              <li>Jean Baker</li>
+            </ul>
+          </div>
+          <div class="col-sm-2">
+            <ul>
+              <li class="amount-paid">$125.00</li>
+              <li>+ 14.95 Shipping</li>
+            </ul>
+          </div>
+          <div class="col-sm-2">
+            <a href="#">Track Package</a>
+          </div>
+        </div>
+
+        <div class="row order-item-row">
+          <div class="col-sm-2 text-right order-item-number-div">
+            <span>01</span>
+          </div>
+          <div class="col-sm-2">
+            <span class="order-status">Order Received</span>
+          </div>
+          <div class="col-sm-4 order-artwork-div">
+            <div class="cart-artwork-img">
+              <img src="./assets/images/painting1.JPG" alt="" class="img-responsive">
+            </div>
+            <ul class="cart-artwork-details">
+              <li class=cart-artwork-title>The White Church</li>
+              <li>Jean Baker</li>
+            </ul>
+          </div>
+          <div class="col-sm-2">
+            <ul>
+              <li class="amount-paid">$125.00</li>
+              <li>+ 14.95 Shipping</li>
+            </ul>
+          </div>
+          <div class="col-sm-2">
+            <a href="#">Track Package</a>
+          </div>
+        </div>
+
+        <div class="row order-item-row">
+          <div class="col-sm-2 text-right order-item-number-div">
+            <span>01</span>
+          </div>
+          <div class="col-sm-2">
+            <span class="order-status">Order Received</span>
+          </div>
+          <div class="col-sm-4 order-artwork-div">
+            <div class="cart-artwork-img">
+              <img src="./assets/images/painting1.JPG" alt="" class="img-responsive">
+            </div>
+            <ul class="cart-artwork-details">
+              <li class=cart-artwork-title>The White Church</li>
+              <li>Jean Baker</li>
+            </ul>
+          </div>
+          <div class="col-sm-2">
+            <ul>
+              <li class="amount-paid">$125.00</li>
+              <li>+ 14.95 Shipping</li>
+            </ul>
+          </div>
+          <div class="col-sm-2">
+            <a href="#">Track Package</a>
+          </div>
+        </div>
+      </div>
+      <!-- End Order Items Row -->
+
+      <!-- End Order Details Row -->
+
+      <!-- Order Details Row -->
+      <div class="row order-detail-row">
+        <div class="col-sm-2">
+          <span class="order-number">123456789</span>
+        </div>
+        <div class="col-sm-2">
+          <span>September 20, 2017</span>
+        </div>
+        <div class="col-sm-4">
+          <span class="order-recipient">Jenn Baker</span>
+          <ul>
+            <li>3943 N Halstead</li>
+            <li>Chicago, IL 60601</li>
+            <li>United States</li>
+          </ul>
+        </div>
+        <div class="col-sm-2">
+          <span class="cart-artwork-price">$1500.00</span>
+          <ul>
+            <li>Charged to Visa ****0921</li>
+          </ul>
+        </div>
+        <div class="col-sm-12">
+          <button class="expand-btn" data-toggle="collapse" data-target="#order-item-3"></button>
+        </div>
+      </div>
+
+      <!-- Order Items Row -->
+      <div class="collapse" id="order-item-3">
+        <div class="row order-item-row">
+          <div class="col-sm-2 text-right order-item-number-div">
+            <span>01</span>
+          </div>
+          <div class="col-sm-2">
+            <span class="order-status">Order Received</span>
+          </div>
+          <div class="col-sm-4 order-artwork-div">
+            <div class="cart-artwork-img">
+              <img src="./assets/images/painting1.JPG" alt="" class="img-responsive">
+            </div>
+            <ul class="cart-artwork-details">
+              <li class=cart-artwork-title>The White Church</li>
+              <li>Jean Baker</li>
+            </ul>
+          </div>
+          <div class="col-sm-2">
+            <ul>
+              <li class="amount-paid">$125.00</li>
+              <li>+ 14.95 Shipping</li>
+            </ul>
+          </div>
+          <div class="col-sm-2">
+            <a href="#">Track Package</a>
+          </div>
+        </div>
+
+        <div class="row order-item-row">
+          <div class="col-sm-2 text-right order-item-number-div">
+            <span>01</span>
+          </div>
+          <div class="col-sm-2">
+            <span class="order-status">Order Received</span>
+          </div>
+          <div class="col-sm-4 order-artwork-div">
+            <div class="cart-artwork-img">
+              <img src="./assets/images/painting1.JPG" alt="" class="img-responsive">
+            </div>
+            <ul class="cart-artwork-details">
+              <li class=cart-artwork-title>The White Church</li>
+              <li>Jean Baker</li>
+            </ul>
+          </div>
+          <div class="col-sm-2">
+            <ul>
+              <li class="amount-paid">$125.00</li>
+              <li>+ 14.95 Shipping</li>
+            </ul>
+          </div>
+          <div class="col-sm-2">
+            <a href="#">Track Package</a>
+          </div>
+        </div>
+
+        <div class="row order-item-row">
+          <div class="col-sm-2 text-right order-item-number-div">
+            <span>01</span>
+          </div>
+          <div class="col-sm-2">
+            <span class="order-status">Order Received</span>
+          </div>
+          <div class="col-sm-4 order-artwork-div">
+            <div class="cart-artwork-img">
+              <img src="./assets/images/painting1.JPG" alt="" class="img-responsive">
+            </div>
+            <ul class="cart-artwork-details">
+              <li class=cart-artwork-title>The White Church</li>
+              <li>Jean Baker</li>
+            </ul>
+          </div>
+          <div class="col-sm-2">
+            <ul>
+              <li class="amount-paid">$125.00</li>
+              <li>+ 14.95 Shipping</li>
+            </ul>
+          </div>
+          <div class="col-sm-2">
+            <a href="#">Track Package</a>
+          </div>
+        </div>
+      </div>
+      <!-- End Order Items Row -->
+
+      <!-- End Order Details Row -->
+
+    </div>
+    <!-- End Page Content -->
+
+
+    <!-- Sticky Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row footer-row">
+          <div class="col-md-2">
+            <a href="#"><h5>Collectors</h5></a>
+              <ul>
+                <a href="#"><li>About our Collectors</li></a>
+                <a href="#"><li>Transaction FAQ</li></a>
+                <a href="#"><li>Collector Terms</li></a>
+              </ul>
+          </div>
+          <div class="col-md-2">
+            <a href="#"><h5>Artists</h5></a>
+              <ul>
+                <a href="#"><li>About out Artists</li></a>
+                <a href="#"><li>Portfolio Help Guide</li></a>
+                <a href="#"><li>Artist Terms</li></a>
+              </ul>
+          </div>
+          <div class="col-md-2">
+            <a href="#"><h5>About Us</h5></a>
+              <ul>
+                <a href="#"><li>Purpose</li></a>
+                <a href="#"><li>Contact Picturra</li></a>
+                <a href="#"><li>Site User Terms</li></a>
+              </ul>
+          </div>
+          <div class="col-md-4 col-md-offset-2">
+            <h2>Picturra</h2>
+            <h4>Tagline</h4>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- jQueryUI -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <!-- jQueryUI touch with Touch Punch -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- Isotope JS for gallery layout and sorting -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <script src="./assets/js/isotope-gallery.js"></script>
+    <!-- imagesLoaded plugin -->
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <!-- Flickity for carousel -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="assets/js/flickity-filters.js"></script>
+    <!-- Portfolio scripts -->
+    <script src="assets/js/portfolio-scripts.js"></script>
+    <!-- Fancybox for lightbox -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.js"></script>
+    <!-- Lightbox scripts -->
+    <script src="assets/js/lightbox-scripts.js"></script>
+    <!-- Porfolio Management scripts -->
+    <script src="assets/js/portfolio-management.js"></script>
+  </body>
+</html>
